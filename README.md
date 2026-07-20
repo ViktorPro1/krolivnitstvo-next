@@ -1,36 +1,164 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐰 Rabbit Farming From A to Z (Next.js)
 
-## Getting Started
+Сучасний вебдодаток про кролівництво, створений на **Next.js**. Проєкт поєднує практичні знання для кролівників із сучасними вебтехнологіями, забезпечуючи високу швидкодію, SEO-оптимізацію та зручний користувацький досвід.
 
-First, run the development server:
+> Це нова версія проєкту, яка поступово замінює React-версію та розширює її можливості.
+
+---
+
+# 🌐 Live Demo
+
+> У процесі розробки.
+
+---
+
+# 📖 Про проєкт
+
+**Rabbit Farming From A to Z** — це сучасний інформаційний вебпроєкт, присвячений кролівництву.
+
+Проєкт містить структуровану інформацію про:
+
+- утримання кролів;
+- породи;
+- годування;
+- розведення;
+- ветеринарію;
+- клітки та обладнання;
+- поширені помилки;
+- практичні рекомендації;
+- корисні калькулятори;
+- AI-інструменти для кролівників.
+
+Основна мета проєкту — створити найбільш повний український онлайн-довідник із кролівництва.
+
+---
+
+# ✨ Основні можливості
+
+- Next.js App Router
+- Server Side Rendering (SSR)
+- Static Site Generation (SSG)
+- SEO-оптимізація кожної сторінки
+- Metadata API
+- Open Graph
+- Schema.org (JSON-LD)
+- XML Sitemap
+- Robots.txt
+- Progressive Web App (PWA)
+- Адаптивний дизайн
+- Оптимізація зображень
+- Компонентна архітектура
+- Темна та світла теми
+- Breadcrumbs
+- Lazy Loading
+- Оптимізація Core Web Vitals
+
+---
+
+# 🛠️ Технології
+
+- Next.js
+- React
+- TypeScript
+- CSS Modules
+- ESLint
+- Image Optimization
+- Metadata API
+- App Router
+
+---
+
+# 📁 Структура проєкту
+
+```text
+app/
+components/
+features/
+hooks/
+lib/
+types/
+public/
+styles/
+```
+
+---
+
+# 🚀 Встановлення
+
+```bash
+git clone https://github.com/ViktorPro1/krolivnitstvo-next.git
+```
+
+```bash
+cd krolivnitstvo-next
+```
+
+```bash
+npm install
+```
+
+---
+
+# ▶️ Запуск у режимі розробки
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 📦 Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🔄 Міграція з React
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Цей репозиторій є новою версією проєкту **Rabbit Farming From A to Z**, яка переноситься з React на Next.js.
 
-## Deploy on Vercel
+Основні причини переходу:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- покращення SEO;
+- Server Side Rendering;
+- Static Site Generation;
+- швидший рендеринг сторінок;
+- покращення індексації Google;
+- вища продуктивність;
+- сучасна архітектура;
+- простіше масштабування проєкту.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 📌 Заплановано
+
+- завершення міграції всіх сторінок;
+- AI-помічник;
+- особистий кабінет;
+- система обліку кролів;
+- інтерактивні калькулятори;
+- мультимовність;
+- офлайн-режим (PWA);
+- подальша оптимізація продуктивності.
+
+---
+
+# 📄 Ліцензія
+
+MIT License.
+
+---
+
+# 👨‍💻 Автор
+
+**Viktor Pro1**
+
+Проєкт розробляється вручну у Visual Studio Code з використанням сучасних AI-інструментів.
+
+© 2026 Viktor Pro1. Усі права захищені.
