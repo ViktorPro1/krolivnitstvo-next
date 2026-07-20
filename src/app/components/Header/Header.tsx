@@ -1,4 +1,3 @@
-// src/app/components/Header/Header.tsx
 "use client";
 
 import { useEffect, useState, useRef } from "react";
@@ -219,7 +218,11 @@ const Header = ({ session }: Props) => {
       >
         <div className="drawer-header">
           <span className="drawer-logo">🐇 Меню</span>
-          <button className="drawer-close" onClick={closeMenu} aria-label="Закрити меню">
+          <button
+            className="drawer-close"
+            onClick={closeMenu}
+            aria-label="Закрити меню"
+          >
             ✕
           </button>
         </div>
@@ -236,7 +239,10 @@ const Header = ({ session }: Props) => {
           <Link
             href="/changelog"
             onClick={() => {
-              localStorage.setItem("changelog_last_seen", new Date().toISOString());
+              localStorage.setItem(
+                "changelog_last_seen",
+                new Date().toISOString(),
+              );
               setUnreadCount(0);
               closeMenu();
             }}

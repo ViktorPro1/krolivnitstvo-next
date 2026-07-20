@@ -1,4 +1,3 @@
-// src/app/hooks/usePublicPresence.ts
 import { useEffect } from "react";
 import { supabase } from "../../lib/supabase";
 
@@ -15,7 +14,7 @@ export function usePublicPresence() {
       config: { presence: { key: sessionId } },
     });
     channel
-      .on("presence", { event: "sync" }, () => {})
+      .on("presence", { event: "sync" }, () => { })
       .subscribe(async (status) => {
         if (status === "SUBSCRIBED") {
           await channel.track({

@@ -1,4 +1,3 @@
-// src/app/components/ThemeToggle/ThemeToggle.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -19,7 +18,10 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     if (!mounted) return;
-    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+    document.documentElement.setAttribute(
+      "data-theme",
+      dark ? "dark" : "light",
+    );
     localStorage.setItem("theme", dark ? "dark" : "light");
   }, [dark, mounted]);
 

@@ -1,4 +1,3 @@
-// src/app/components/Footer/Footer.tsx
 "use client";
 
 import { useState } from "react";
@@ -48,7 +47,10 @@ const Footer = () => {
         </div>
       </footer>
 
-      <FeedbackModal isOpen={feedbackOpen} onClose={() => setFeedbackOpen(false)} />
+      <FeedbackModal
+        isOpen={feedbackOpen}
+        onClose={() => setFeedbackOpen(false)}
+      />
     </>
   );
 };

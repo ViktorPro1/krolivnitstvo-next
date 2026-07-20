@@ -1,4 +1,3 @@
-// src/app/components/FeedbackModal/FeedbackModal.tsx
 "use client";
 
 import { useState, useEffect } from "react";
@@ -21,7 +20,9 @@ const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
   const [page, setPage] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
 
   useEffect(() => {
     setMounted(true);
@@ -71,7 +72,12 @@ const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
   };
 
   return createPortal(
-    <div className="fm-overlay" onClick={handleOverlayClick} role="dialog" aria-modal="true">
+    <div
+      className="fm-overlay"
+      onClick={handleOverlayClick}
+      role="dialog"
+      aria-modal="true"
+    >
       <div className="fm-modal">
         <div className="fm-header">
           <h2 className="fm-title">Зворотний зв'язок</h2>
@@ -90,28 +96,31 @@ const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
             <div className="fm-field">
               <label className="fm-label">Тип звернення</label>
               <div className="fm-type-group">
-                {(["error", "question", "suggestion"] as FeedbackType[]).map((t) => {
-                  const labels: Record<FeedbackType, string> = {
-                    error: "🐛 Помилка",
-                    question: "❓ Питання",
-                    suggestion: "💡 Пропозиція",
-                  };
-                  return (
-                    <button
-                      key={t}
-                      className={`fm-type-btn${type === t ? " fm-type-btn--active" : ""}`}
-                      onClick={() => setType(t)}
-                    >
-                      {labels[t]}
-                    </button>
-                  );
-                })}
+                {(["error", "question", "suggestion"] as FeedbackType[]).map(
+                  (t) => {
+                    const labels: Record<FeedbackType, string> = {
+                      error: "🐛 Помилка",
+                      question: "❓ Питання",
+                      suggestion: "💡 Пропозиція",
+                    };
+                    return (
+                      <button
+                        key={t}
+                        className={`fm-type-btn${type === t ? " fm-type-btn--active" : ""}`}
+                        onClick={() => setType(t)}
+                      >
+                        {labels[t]}
+                      </button>
+                    );
+                  },
+                )}
               </div>
             </div>
 
             <div className="fm-field">
               <label className="fm-label" htmlFor="fm-page">
-                Сторінка / тема <span className="fm-optional">(необов'язково)</span>
+                Сторінка / тема{" "}
+                <span className="fm-optional">(необов'язково)</span>
               </label>
               <input
                 id="fm-page"
@@ -126,7 +135,10 @@ const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
 
             <div className="fm-field">
               <label className="fm-label" htmlFor="fm-email">
-                Email <span className="fm-optional">(необов'язково — для відповіді)</span>
+                Email{" "}
+                <span className="fm-optional">
+                  (необов'язково — для відповіді)
+                </span>
               </label>
               <input
                 id="fm-email"
@@ -156,7 +168,9 @@ const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
             </div>
 
             {status === "error" && (
-              <p className="fm-error-msg">Помилка надсилання. Спробуйте ще раз.</p>
+              <p className="fm-error-msg">
+                Помилка надсилання. Спробуйте ще раз.
+              </p>
             )}
 
             <div className="fm-footer">

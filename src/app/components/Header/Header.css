@@ -319,6 +319,13 @@
     }
 }
 
+.drawer-links a svg,
+.drawer-logout svg {
+    flex-shrink: 0;
+    stroke-width: 2;
+}
+
+
 /* Мобільний 640px — вмикаємо бургер */
 @media (max-width: 640px) {
     .header {
@@ -351,10 +358,4 @@
     .drawer {
         width: 82vw;
     }
-}
-
-.drawer-links a svg,
-.drawer-logout svg {
-    flex-shrink: 0;
-    stroke-width: 2;
 }
