@@ -150,6 +150,31 @@ export default function AppShell({ children }: { children: ReactNode }) {
     };
   }, [checkProfile]);
 
+  // ПВА мобільний додаток:
+  useEffect(() => {
+    if (!("serviceWorker" in navigator)) return;
+
+    navigator.serviceWorker.getRegistration().then((reg) => {
+      if (!reg) return;
+
+      if (reg.waiting) {
+        window.dispatchEvent(new CustomEvent("sw-update"));
+      }
+
+      reg.addEventListener("updatefound", () => {
+        const newWorker = reg.installing;
+        newWorker?.addEventListener("statechange", () => {
+          if (
+            newWorker.state === "installed" &&
+            navigator.serviceWorker.controller
+          ) {
+            window.dispatchEvent(new CustomEvent("sw-update"));
+          }
+        });
+      });
+    });
+  }, []);
+
   if (isOffline) {
     return (
       <div className="status-screen-wrap">

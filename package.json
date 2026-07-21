@@ -9,6 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@serwist/next": "^9.5.11",
+    "@serwist/precaching": "^9.5.11",
+    "@serwist/sw": "^9.5.11",
     "@supabase/supabase-js": "^2.110.7",
     "lucide-react": "^1.25.0",
     "next": "16.2.10",
@@ -16,6 +19,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-share": "^5.3.0",
+    "serwist": "^9.5.11",
     "vanilla-cookieconsent": "^3.1.0"
   },
   "devDependencies": {
