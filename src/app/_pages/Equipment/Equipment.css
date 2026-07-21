@@ -1,0 +1,473 @@
+.equipment-page {
+    min-height: 100vh;
+}
+
+.equipment-header {
+    background: linear-gradient(90deg, var(--brown), var(--green-dark));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.equipment-header h1 {
+    font-size: clamp(22px, 3.6vw, 36px);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.equipment-header p {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.equipment-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.equipment-section-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--green-light);
+}
+
+.equipment-section-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 1.5rem 0 0.75rem;
+    padding-left: 12px;
+    border-left: 3px solid var(--green-accent);
+}
+
+.equipment-note {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.equipment-note p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.equipment-note ul,
+.equipment-note ol {
+    padding-left: 1.2rem;
+    margin: 8px 0;
+}
+
+.equipment-note li {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+/* DEVICE INTRO */
+.equipment-device-intro {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+}
+
+.equipment-image-placeholder {
+    background: var(--green-light);
+    border-radius: 12px;
+    border: 2px dashed var(--green-accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 200px;
+    color: var(--green-mid);
+}
+
+.equipment-image-placeholder span {
+    font-size: 40px;
+}
+
+.equipment-image-placeholder p {
+    font-size: 13px;
+    color: var(--green-mid);
+    margin: 0;
+}
+
+.equipment-device-desc h2 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+}
+
+.equipment-device-desc p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+/* SPECS TABLE */
+.equipment-specs-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.equipment-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: var(--cream);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.equipment-specs-table td {
+    padding: 10px 14px;
+    border-bottom: 0.5px solid var(--gray-light);
+    color: var(--green-dark);
+    vertical-align: top;
+}
+
+.equipment-specs-table td:first-child {
+    background: var(--green-light);
+    width: 220px;
+    color: var(--green-dark);
+}
+
+.equipment-specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* STEPS LIST */
+.equipment-steps-list {
+    padding-left: 1.4rem;
+    margin: 8px 0;
+}
+
+.equipment-steps-list li {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+/* MAINTENANCE */
+.equipment-maintenance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.equipment-maintenance-card {
+    background: var(--cream);
+    border-radius: 12px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1rem;
+}
+
+.equipment-maintenance-period {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--green-dark);
+    background: var(--green-light);
+    padding: 4px 10px;
+    border-radius: 999px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.equipment-maintenance-card p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* PROBLEMS TABLE */
+.equipment-problems-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.equipment-problems-table th {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.equipment-problems-table td {
+    padding: 10px 12px;
+    border-bottom: 0.5px solid var(--gray-light);
+    color: var(--green-dark);
+    vertical-align: top;
+}
+
+.equipment-problems-table tr:nth-child(even) td {
+    background: var(--green-light);
+}
+
+.equipment-problems-table tr:hover td {
+    background: var(--green-light);
+}
+
+.equipment-problems-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* COMPARE */
+.equipment-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 1rem;
+}
+
+.equipment-compare-card {
+    border-radius: 16px;
+    padding: 1.25rem;
+    border: 0.5px solid var(--gray-light);
+}
+
+.equipment-compare-card.granulator {
+    background: var(--green-light);
+}
+
+.equipment-compare-card.extruder {
+    background: var(--amber-light);
+}
+
+.equipment-compare-card h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+}
+
+.equipment-compare-card ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.equipment-compare-card li {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 4px;
+    padding: 4px 0;
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.equipment-compare-card li:last-child {
+    border-bottom: none;
+}
+
+/* CHOPPER */
+.equipment-chopper-types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 1rem;
+}
+
+.equipment-chopper-card {
+    border-radius: 16px;
+    padding: 1.25rem;
+    border: 0.5px solid var(--gray-light);
+}
+
+.equipment-chopper-card.allowed {
+    background: var(--green-light);
+}
+
+.equipment-chopper-card.forbidden {
+    background: var(--amber-light);
+}
+
+.equipment-chopper-card h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.equipment-chopper-card.allowed h3 {
+    color: var(--green-dark);
+}
+
+.equipment-chopper-card.forbidden h3 {
+    color: var(--brown);
+}
+
+.equipment-chopper-card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.equipment-chopper-card li {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+/* ALERTS */
+.equipment-alert {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.equipment-alert.ok {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border-left: 3px solid var(--green-dark);
+}
+
+.equipment-alert.warn {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+/* BACK */
+.equipment-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.equipment-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.equipment-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.equipment-device-img {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.equipment-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 16px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.equipment-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .equipment-related-title {
+    color: var(--green-light);
+}
+
+.equipment-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.equipment-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.equipment-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .equipment-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .equipment-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .equipment-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+
+    .equipment-related {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipment-device-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-compare-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-chopper-types {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-maintenance-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .equipment-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .equipment-problems-table th,
+    .equipment-problems-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

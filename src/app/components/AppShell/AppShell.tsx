@@ -16,6 +16,7 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import { usePublicPresence } from "../../hooks/usePublicPresence";
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 import PrintButton from "../PrintButton/PrintButton";
+import { SessionContext } from "../../context/SessionContext";
 
 function cleanInvisibleUnicodeFromPath() {
   const invisibleCharsRegex = /[\u200B-\u200D\uFEFF\u2060-\u2064\u00AD]/g;
@@ -98,7 +99,6 @@ export default function AppShell({ children }: { children: ReactNode }) {
       const splash = document.getElementById("splash");
       if (splash) {
         splash.classList.add("splash--hidden");
-        setTimeout(() => splash.remove(), 400);
       }
     }
   }, [loading]);
@@ -188,21 +188,23 @@ export default function AppShell({ children }: { children: ReactNode }) {
   if (session && !hasProfile) return <SubscriptionExpired />;
 
   return (
-    <ErrorBoundary>
-      <CopyProtection />
-      <CookieConsentBanner />
-      <WelcomePopup />
-      <Assistant />
-      <AssistantPromo />
-      <Header session={session} />
-      <div className="breadcrumbs-wrap">
-        <Breadcrumbs />
-      </div>
-      {children}
-      <PrintButton />
-      <ScrollToTop />
-      <Footer />
-      <UpdatePrompt />
-    </ErrorBoundary>
+    <SessionContext.Provider value={session}>
+      <ErrorBoundary>
+        <CopyProtection />
+        <CookieConsentBanner />
+        <WelcomePopup />
+        <Assistant />
+        <AssistantPromo />
+        <Header session={session} />
+        <div className="breadcrumbs-wrap">
+          <Breadcrumbs />
+        </div>
+        {children}
+        <PrintButton />
+        <ScrollToTop />
+        <Footer />
+        <UpdatePrompt />
+      </ErrorBoundary>
+    </SessionContext.Provider>
   );
 }

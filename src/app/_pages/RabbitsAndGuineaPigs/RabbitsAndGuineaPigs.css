@@ -1,0 +1,807 @@
+.ragp-page {
+    min-height: 100vh;
+    background: var(--cream);
+}
+
+/* ── HEADER ── */
+
+.ragp-header {
+    background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 60%, var(--green-accent) 100%);
+    color: white;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ragp-header::before {
+    content: "🐇🐹";
+    position: absolute;
+    font-size: 100px;
+    opacity: 0.06;
+    top: -10px;
+    right: 30px;
+    pointer-events: none;
+}
+
+.ragp-header h1 {
+    font-size: clamp(20px, 3.4vw, 34px);
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+}
+
+.ragp-header p {
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+/* ── WRAP ── */
+
+.ragp-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+/* ── BANNER ── */
+
+.ragp-banner {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--amber-light);
+    border-left: 4px solid var(--amber);
+    border-radius: 14px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.ragp-banner>span {
+    font-size: 22px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ragp-banner strong {
+    color: var(--brown);
+}
+
+/* ── TABS ── */
+
+.ragp-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.ragp-tab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1.5px solid var(--gray-light);
+    background: var(--cream);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--gray);
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ragp-tab:hover {
+    border-color: var(--green-mid);
+    color: var(--green-dark);
+    background: var(--green-light);
+}
+
+.ragp-tab.active {
+    background: var(--green-dark);
+    color: white;
+    border-color: var(--green-dark);
+    box-shadow: 0 2px 8px rgba(39, 80, 10, 0.25);
+}
+
+/* ── CONTENT ── */
+
+.ragp-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ragp-intro {
+    background: var(--cream);
+    border-radius: 14px;
+    border: 1px solid var(--gray-light);
+    padding: 1.2rem 1.4rem;
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.ragp-note {
+    background: var(--cream);
+    border-radius: 14px;
+    border: 1px solid var(--gray-light);
+    padding: 1.4rem;
+}
+
+.ragp-note p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.ragp-sub-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 0.5rem 0 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--green-light);
+}
+
+/* ── SOURCE ── */
+
+.ragp-source {
+    font-size: 12px;
+    color: var(--gray);
+    padding: 8px 12px;
+    background: var(--green-light);
+    border-radius: 8px;
+    border-left: 3px solid var(--gray-light);
+}
+
+/* ── ALERTS ── */
+
+.ragp-alert {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.ragp-alert.warn {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+.ragp-alert.tip {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+.ragp-inline-tip {
+    margin-top: 8px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+.ragp-inline-alert {
+    margin-top: 8px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.ragp-inline-alert.warn {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+/* ── VERDICT GRID ── */
+
+.ragp-verdict-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.ragp-verdict-card {
+    border-radius: 16px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.ragp-verdict-card.no {
+    background: var(--amber-light);
+    border: 1.5px solid var(--amber);
+}
+
+.ragp-verdict-card.caution {
+    background: var(--amber-light);
+    border: 1.5px solid var(--amber);
+}
+
+.ragp-verdict-card.ok {
+    background: var(--green-light);
+    border: 1.5px solid var(--green-pale);
+}
+
+.ragp-verdict-icon {
+    font-size: 28px;
+}
+
+.ragp-verdict-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+.ragp-verdict-card p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── THREE GRID ── */
+
+.ragp-three-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.ragp-three-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 1px solid var(--gray-light);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.ragp-three-num {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--green-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ragp-three-icon {
+    font-size: 26px;
+}
+
+.ragp-three-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+.ragp-three-card p {
+    font-size: 12px;
+    color: var(--gray);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── DISEASE CARDS ── */
+
+.ragp-disease-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.ragp-disease-card.main {
+    border: 1.5px solid var(--amber);
+}
+
+.ragp-disease-head {
+    background: var(--amber-light);
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.ragp-disease-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.3px;
+}
+
+.ragp-disease-badge.danger {
+    background: var(--brown);
+    color: white;
+}
+
+.ragp-disease-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--brown);
+    font-style: italic;
+}
+
+.ragp-disease-body {
+    background: var(--cream);
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ragp-disease-row {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--green-light);
+    border: 1px solid var(--gray-light);
+}
+
+.ragp-disease-row.danger-row {
+    background: var(--amber-light);
+    border-color: var(--amber);
+}
+
+.ragp-disease-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gray);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.ragp-disease-row p {
+    font-size: 13px;
+    color: var(--green-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── CARDS GRID ── */
+
+.ragp-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.ragp-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 1px solid var(--gray-light);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.ragp-card.danger {
+    background: var(--amber-light);
+    border-color: var(--amber);
+}
+
+.ragp-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+}
+
+.ragp-card-header span:first-child {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.ragp-card p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── TABLE ── */
+
+.ragp-diet-table-wrap {
+    overflow-x: auto;
+}
+
+.ragp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: var(--cream);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.ragp-table th {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.ragp-table td {
+    padding: 10px 14px;
+    border-bottom: 0.5px solid var(--gray-light);
+    color: var(--green-dark);
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.ragp-table tr:last-child td {
+    border-bottom: none;
+}
+
+.ragp-table tr:hover td {
+    background: var(--green-light);
+}
+
+.ragp-badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.ragp-badge.green {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border: 1px solid var(--green-pale);
+}
+
+.ragp-badge.red {
+    background: var(--amber-light);
+    color: var(--brown);
+    border: 1px solid var(--amber);
+}
+
+.ragp-badge.yellow {
+    background: var(--amber-light);
+    color: var(--amber);
+    border: 1px solid var(--amber);
+}
+
+.ragp-badge.gray {
+    background: var(--gray-light);
+    color: var(--gray);
+    border: 1px solid var(--gray-light);
+}
+
+/* ── COMPARE ── */
+
+.ragp-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.ragp-compare-card {
+    border-radius: 16px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ragp-compare-card.rabbit {
+    background: var(--green-light);
+    border: 1px solid var(--green-pale);
+}
+
+.ragp-compare-card.guinea {
+    background: var(--amber-light);
+    border: 1px solid var(--amber);
+}
+
+.ragp-compare-header {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--green-dark);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.ragp-compare-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 0.5px solid var(--gray-light);
+    font-size: 13px;
+}
+
+.ragp-compare-item:last-child {
+    border-bottom: none;
+}
+
+.ragp-compare-item span:first-child {
+    color: var(--green-dark);
+    font-weight: 500;
+}
+
+.ragp-compare-meaning {
+    color: var(--gray);
+    font-style: italic;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* ── HOUSING ── */
+
+.ragp-housing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.ragp-housing-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 1px solid var(--gray-light);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ragp-housing-icon {
+    font-size: 28px;
+}
+
+.ragp-housing-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+.ragp-housing-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ragp-housing-item {
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.5;
+    align-items: flex-start;
+}
+
+.ragp-housing-item span:first-child {
+    flex-shrink: 0;
+}
+
+/* ── STEPS ── */
+
+.ragp-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ragp-step {
+    display: flex;
+    gap: 14px;
+    background: var(--cream);
+    border-radius: 14px;
+    border: 1px solid var(--gray-light);
+    padding: 1rem 1.2rem;
+    align-items: flex-start;
+}
+
+.ragp-step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--green-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.ragp-step-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+}
+
+.ragp-step p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── RULES ── */
+
+.ragp-rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ragp-rule {
+    display: flex;
+    gap: 14px;
+    background: var(--cream);
+    border-radius: 14px;
+    border: 1px solid var(--gray-light);
+    padding: 1.1rem 1.2rem;
+    align-items: flex-start;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.ragp-rule-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.ragp-rule-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+}
+
+.ragp-rule p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── BACK ── */
+
+.ragp-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.ragp-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 11px 28px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(39, 80, 10, 0.2);
+}
+
+.ragp-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.ragp-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.ragp-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .ragp-related-title {
+    color: var(--green-light);
+}
+
+.ragp-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ragp-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.ragp-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .ragp-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .ragp-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .ragp-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+}
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 768px) {
+
+    .ragp-verdict-grid,
+    .ragp-cards-grid,
+    .ragp-compare-grid,
+    .ragp-housing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ragp-three-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .ragp-header {
+        padding: 2rem 1rem;
+    }
+
+    .ragp-tab {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .ragp-table th,
+    .ragp-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

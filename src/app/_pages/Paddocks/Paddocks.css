@@ -1,0 +1,444 @@
+.paddocks-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.paddocks-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.paddocks-header h1 {
+    color: var(--green-dark);
+    font-size: 1.8rem;
+}
+
+.paddocks-back-btn {
+    padding: 0.6rem 1.2rem;
+    background: none;
+    border: 1px solid var(--green-dark);
+    border-radius: 8px;
+    color: var(--green-dark);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.paddocks-back-btn:hover {
+    background: var(--green-dark);
+    color: white;
+}
+
+.paddocks-add-btn {
+    padding: 0.6rem 1.2rem;
+    background: var(--green-dark);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.2s;
+}
+
+.paddocks-add-btn:hover {
+    background: var(--green-mid);
+}
+
+.paddocks-form {
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.paddocks-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.paddocks-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.paddocks-form-field label {
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+
+.paddocks-form-grid input,
+.paddocks-form-grid select {
+    padding: 0.65rem 0.9rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    width: 100%;
+    background: var(--cream);
+    color: var(--green-dark);
+}
+
+.paddocks-form-grid input:focus,
+.paddocks-form-grid select:focus {
+    border-color: var(--green-dark);
+}
+
+.paddocks-form-full {
+    grid-column: 1 / -1;
+}
+
+.paddocks-error {
+    color: #c0392b;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.paddocks-save-btn {
+    padding: 0.65rem 1.5rem;
+    background: var(--green-accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.paddocks-save-btn:hover {
+    background: var(--green-mid);
+}
+
+.paddocks-save-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.paddocks-empty {
+    color: var(--gray);
+    text-align: center;
+    padding: 2rem;
+}
+
+.paddocks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.paddock-card {
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    border-left: 4px solid var(--green-mid);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.paddock-card-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.paddock-name {
+    font-weight: 700;
+    color: var(--green-dark);
+    font-size: 1.1rem;
+    flex: 1;
+}
+
+.paddock-male {
+    color: var(--green-mid);
+    font-size: 0.95rem;
+}
+
+.paddock-delete-btn {
+    padding: 0.3rem 0.7rem;
+    background: none;
+    border: 1px solid #c0392b;
+    color: #c0392b;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.paddock-delete-btn:hover {
+    background: #c0392b;
+    color: white;
+}
+
+.paddock-females {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.paddock-females strong {
+    font-size: 0.9rem;
+    color: var(--green-dark);
+}
+
+.paddock-females-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.paddock-female-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--green-light);
+    color: var(--green-dark);
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.paddock-female-tag button {
+    background: none;
+    border: none;
+    color: var(--gray);
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0;
+    line-height: 1;
+}
+
+.paddock-female-tag button:hover {
+    color: #c0392b;
+}
+
+.paddock-add-female {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.paddock-add-female select {
+    flex: 1;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    background: var(--cream);
+    color: var(--green-dark);
+    min-width: 200px;
+}
+
+.paddock-female-add-btn {
+    padding: 0.5rem 1rem;
+    background: var(--green-dark);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.paddock-female-add-btn:hover {
+    background: var(--green-mid);
+}
+
+.paddock-female-add-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.paddock-notes {
+    color: var(--gray);
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.paddock-mating {
+    background: var(--green-light);
+    border-radius: 8px;
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-left: 3px solid var(--green-accent);
+}
+
+.paddock-mating-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.paddock-mating-dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--green-dark);
+}
+
+.paddock-mating-add-btn {
+    padding: 0.4rem 0.9rem;
+    background: none;
+    border: 1px solid var(--green-mid);
+    border-radius: 6px;
+    color: var(--green-mid);
+    font-size: 0.9rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.2s;
+}
+
+.paddock-mating-add-btn:hover {
+    background: var(--green-mid);
+    color: white;
+}
+
+.litter-block {
+    background: var(--amber-light);
+    border-radius: 8px;
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    border-left: 3px solid var(--amber);
+}
+
+.litter-block-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.litter-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--green-dark);
+    flex-wrap: wrap;
+}
+
+.litter-weaned {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--brown);
+}
+
+.litter-delete-btn {
+    background: none;
+    border: none;
+    color: var(--gray);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.1rem 0.4rem;
+    transition: color 0.2s;
+}
+
+.litter-delete-btn:hover {
+    color: #c0392b;
+}
+
+.litter-add-btn {
+    padding: 0.4rem 0.9rem;
+    background: none;
+    border: 1px solid var(--amber);
+    border-radius: 6px;
+    color: var(--amber);
+    font-size: 0.9rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.2s;
+}
+
+.litter-add-btn:hover {
+    background: var(--amber);
+    color: white;
+}
+
+.litter-form {
+    background: var(--green-light);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.paddock-female-form {
+    background: var(--green-light);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+    .paddocks-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .paddocks-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .paddock-mating-dates {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .paddocks-page {
+        padding: 1rem;
+    }
+}
+
+/* ===== ПОРОЖНІЙ СТАН ===== */
+.paddocks-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+.paddocks-empty-illustration {
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    animation: bounce 2s infinite;
+}
+
+.paddocks-empty-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin: 0;
+}
+
+.paddocks-empty-desc {
+    font-size: 0.95rem;
+    color: var(--gray);
+    max-width: 320px;
+    line-height: 1.6;
+    margin: 0;
+}

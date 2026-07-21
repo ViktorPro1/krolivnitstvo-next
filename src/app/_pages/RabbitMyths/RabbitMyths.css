@@ -1,0 +1,366 @@
+.myths-page {
+    min-height: 100vh;
+    background: var(--cream);
+}
+
+/* ── HEADER ── */
+
+.myths-header {
+    background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 60%, var(--green-accent) 100%);
+    color: white;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.myths-header::before {
+    content: "🚫";
+    position: absolute;
+    font-size: 120px;
+    opacity: 0.06;
+    top: -20px;
+    right: 40px;
+    pointer-events: none;
+}
+
+.myths-header h1 {
+    font-size: clamp(22px, 3.6vw, 38px);
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+}
+
+.myths-header p {
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+/* ── WRAP ── */
+
+.myths-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+/* ── BANNER ── */
+
+.myths-banner {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--cream);
+    border-radius: 16px;
+    border: 1px solid var(--gray-light);
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.myths-banner>span {
+    font-size: 22px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── CATEGORIES ── */
+
+.myths-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.myths-cat {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1.5px solid var(--gray-light);
+    background: var(--cream);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--gray);
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.myths-cat:hover {
+    border-color: var(--green-mid);
+    color: var(--green-dark);
+    background: var(--green-light);
+}
+
+.myths-cat.active {
+    background: var(--green-dark);
+    color: white;
+    border-color: var(--green-dark);
+    box-shadow: 0 2px 8px rgba(39, 80, 10, 0.25);
+}
+
+/* ── COUNT ── */
+
+.myths-count {
+    font-size: 12px;
+    color: var(--gray);
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.2px;
+}
+
+/* ── LIST ── */
+
+.myths-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ── ITEM ── */
+
+.myths-item {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 1.5px solid var(--gray-light);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.myths-item:hover {
+    border-color: var(--green-pale);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+}
+
+.myths-item.open {
+    border-color: var(--green-mid);
+    box-shadow: 0 4px 16px rgba(39, 80, 10, 0.1);
+}
+
+.myths-item-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 1.1rem 1.2rem;
+}
+
+.myths-item-icon {
+    font-size: 26px;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.myths-item-texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.myths-item-myth {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brown);
+    line-height: 1.4;
+}
+
+.myths-item-preview {
+    font-size: 12px;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.myths-item-arrow {
+    font-size: 11px;
+    color: var(--gray);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+/* ── BODY ── */
+
+.myths-item-body {
+    border-top: 1.5px solid var(--gray-light);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--green-light);
+}
+
+.myths-block {
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.myths-block.reality {
+    background: var(--green-light);
+    border: 1px solid var(--green-pale);
+}
+
+.myths-block.detail {
+    background: var(--cream);
+    border: 1px solid var(--gray-light);
+}
+
+.myths-block-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gray);
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.myths-block p {
+    font-size: 13px;
+    color: var(--green-dark);
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ── SOURCE ── */
+
+.myths-source {
+    font-size: 12px;
+    color: var(--gray);
+    padding: 6px 10px;
+    background: var(--green-light);
+    border-radius: 8px;
+    border-left: 3px solid var(--gray-light);
+}
+
+/* ── ALERTS ── */
+
+.myths-alert {
+    border-radius: 8px;
+    padding: 9px 13px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.myths-alert.warn {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+.myths-alert.tip {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+/* ── BACK ── */
+
+.myths-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.myths-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 11px 28px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(39, 80, 10, 0.2);
+}
+
+.myths-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.myths-related {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.myths-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .myths-related-title {
+    color: var(--green-light);
+}
+
+.myths-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.myths-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.myths-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .myths-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .myths-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .myths-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+}
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 640px) {
+    .myths-header {
+        padding: 2rem 1rem;
+    }
+
+    .myths-cat {
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+
+    .myths-item-top {
+        padding: 0.9rem 1rem;
+    }
+
+    .myths-item-body {
+        padding: 1rem;
+    }
+
+    .myths-item-myth {
+        font-size: 13px;
+    }
+}

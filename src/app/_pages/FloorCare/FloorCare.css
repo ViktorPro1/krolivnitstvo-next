@@ -1,0 +1,337 @@
+.floorcare-page {
+    min-height: 100vh;
+}
+
+.floorcare-header {
+    background: linear-gradient(90deg, var(--green-dark), var(--green-mid));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.floorcare-header h1 {
+    font-size: clamp(22px, 3.6vw, 36px);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.floorcare-header p {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.floorcare-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.floorcare-section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 2rem 0 1rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--green-light);
+}
+
+.floorcare-intro {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.floorcare-note {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.floorcare-note p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.floorcare-note ul {
+    padding-left: 1.2rem;
+    margin: 8px 0;
+}
+
+.floorcare-note li {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+.floorcare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 1rem;
+}
+
+.floorcare-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.floorcare-card-header {
+    padding: 14px 16px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.floorcare-icon {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.floorcare-card-header h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 0;
+}
+
+.floorcare-card-body {
+    padding: 14px 16px 16px;
+    flex: 1;
+}
+
+.floorcare-card-body p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.floorcare-table-wrap {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.floorcare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.floorcare-table th {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.floorcare-table td {
+    padding: 10px 12px;
+    border-bottom: 0.5px solid var(--gray-light);
+    color: var(--green-dark);
+    vertical-align: top;
+}
+
+.floorcare-table tr:nth-child(even) td {
+    background: var(--green-light);
+}
+
+.floorcare-table tr:hover td {
+    background: var(--green-light);
+}
+
+.floorcare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.floorcare-alert {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.floorcare-alert.ok {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border-left: 3px solid var(--green-dark);
+}
+
+.floorcare-alert.warn {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+.floorcare-alert.danger {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--brown);
+}
+
+.floorcare-pros-cons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 1rem;
+}
+
+.floorcare-pros,
+.floorcare-cons {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+}
+
+.floorcare-pros h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 1rem;
+}
+
+.floorcare-cons h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--amber);
+    margin-bottom: 1rem;
+}
+
+.floorcare-pros ul,
+.floorcare-cons ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.floorcare-pros li,
+.floorcare-cons li {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+.floorcare-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.floorcare-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.floorcare-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.floorcare-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding: 24px 32px 0;
+    border-top: 1px solid var(--gray-light);
+}
+
+.floorcare-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .floorcare-related-title {
+    color: var(--green-light);
+}
+
+.floorcare-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.floorcare-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.floorcare-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .floorcare-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .floorcare-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+    .floorcare-related {
+        padding: 24px 20px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .floorcare-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .floorcare-related {
+        padding: 20px 16px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .floorcare-pros-cons {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .floorcare-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .floorcare-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .floorcare-table th,
+    .floorcare-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

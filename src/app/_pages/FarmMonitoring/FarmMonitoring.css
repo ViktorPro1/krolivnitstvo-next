@@ -1,0 +1,374 @@
+.vm-page {
+    --grid-line: color-mix(in srgb, var(--gray-light) 60%, transparent);
+
+    background:
+        repeating-linear-gradient(0deg,
+            var(--grid-line) 0,
+            var(--grid-line) 1px,
+            transparent 1px,
+            transparent 32px),
+        repeating-linear-gradient(90deg,
+            var(--grid-line) 0,
+            var(--grid-line) 1px,
+            transparent 1px,
+            transparent 32px),
+        var(--cream);
+    color: var(--green-dark);
+    font-family: inherit;
+    line-height: 1.6;
+    padding: 0 0 5rem;
+    overflow-x: hidden;
+}
+
+.vm-page * {
+    box-sizing: border-box;
+}
+
+/* ---------- Hero ---------- */
+
+.vm-hero {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 3rem;
+    text-align: center;
+}
+
+.vm-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--green-accent);
+    border: 1px solid var(--gray-light);
+    border-radius: 3px;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 1.5rem;
+    background: var(--cream);
+}
+
+.vm-eyebrow::before {
+    content: "//";
+    color: var(--amber);
+}
+
+.vm-title {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    line-height: 1.25;
+    margin: 0 0 1.25rem;
+    color: var(--green-dark);
+}
+
+.vm-title-accent {
+    display: block;
+    color: var(--amber);
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.5em;
+    margin-top: 0.5rem;
+    font-family: inherit;
+}
+
+.vm-lede {
+    color: var(--gray);
+    font-size: 1.02rem;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+/* ---------- Shared heading ---------- */
+
+.vm-section-heading {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 1.05rem;
+    margin: 0 0 1.75rem;
+    text-align: center;
+    color: var(--green-dark);
+}
+
+.vm-section-heading::before {
+    content: "[ ";
+    color: var(--amber);
+}
+
+.vm-section-heading::after {
+    content: " ]";
+    color: var(--amber);
+}
+
+/* ---------- Use case grid ---------- */
+
+.vm-usecases {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 0;
+}
+
+.vm-usecase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.vm-usecase-card {
+    background: var(--green-light);
+    border: 1px solid var(--gray-light);
+    border-left: 3px solid var(--amber);
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+}
+
+.vm-usecase-icon {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+.vm-usecase-title {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.6rem;
+    color: var(--green-dark);
+}
+
+.vm-usecase-text {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ---------- Pipeline sequence ---------- */
+
+.vm-warren {
+    max-width: 62rem;
+    margin: 3.5rem auto 0;
+    padding: 0 1.5rem;
+}
+
+.vm-tunnel {
+    display: none;
+}
+
+.vm-chamber {
+    position: relative;
+    display: flex;
+    gap: 1.1rem;
+    padding: 1.1rem 0;
+    border-bottom: 1px dashed var(--gray-light);
+}
+
+.vm-chamber:last-child {
+    border-bottom: none;
+}
+
+.vm-chamber-marker {
+    flex: none;
+    width: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.15rem;
+}
+
+.vm-chamber-step {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--amber);
+}
+
+.vm-chamber-step::before {
+    content: "[";
+}
+
+.vm-chamber-step::after {
+    content: "]";
+}
+
+.vm-chamber-body {
+    flex: 1;
+}
+
+.vm-chamber-title {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin: 0 0 0.4rem;
+    color: var(--green-dark);
+}
+
+.vm-chamber-text {
+    color: var(--gray);
+    margin: 0;
+    font-size: 0.94rem;
+}
+
+/* ---------- Myths — log entries ---------- */
+
+.vm-myths {
+    max-width: 42rem;
+    margin: 3.5rem auto 0;
+    padding: 0 1.5rem;
+}
+
+.vm-myth-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-light);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.vm-myth {
+    background: var(--green-light);
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.vm-myth:last-child {
+    border-bottom: none;
+}
+
+.vm-myth--open {
+    background: var(--amber-light);
+}
+
+.vm-myth-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: none;
+    border: none;
+    color: var(--green-dark);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.88rem;
+    text-align: left;
+    padding: 0.9rem 1.1rem;
+    cursor: pointer;
+}
+
+.vm-myth-trigger::before {
+    content: ">";
+    color: var(--amber);
+    flex: none;
+}
+
+.vm-myth-icon {
+    margin-left: auto;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--amber);
+    font-size: 1rem;
+}
+
+.vm-myth-truth {
+    margin: 0;
+    padding: 0 1.1rem 1rem 2.5rem;
+    color: var(--gray);
+    font-size: 0.92rem;
+}
+
+/* ---------- Related ---------- */
+
+.vm-related {
+    max-width: 46rem;
+    margin: 3.5rem auto 0;
+    padding: 0 1.5rem;
+}
+
+.vm-related-title {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 1.25rem;
+    color: var(--green-dark);
+}
+
+.vm-related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.vm-related-link {
+    display: block;
+    background: var(--green-light);
+    border: 1px solid var(--gray-light);
+    border-left: 3px solid var(--amber);
+    border-radius: 4px;
+    padding: 0.85rem 1rem;
+    color: var(--green-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.vm-related-link:hover {
+    background: var(--amber-light);
+}
+
+/* ---------- Footer ---------- */
+
+.vm-footer {
+    max-width: 38rem;
+    margin: 3.5rem auto 0;
+    padding: 1.5rem 1.5rem 0;
+    border-top: 1px dashed var(--gray-light);
+}
+
+.vm-footer p {
+    color: var(--gray);
+    font-size: 0.82rem;
+    text-align: center;
+    margin: 1.25rem 0 0;
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1.7;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+    .vm-hero {
+        padding: 3.25rem 1.25rem 2.5rem;
+    }
+
+    .vm-usecase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vm-chamber-marker {
+        width: 2.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .vm-title {
+        font-size: 1.3rem;
+    }
+
+    .vm-lede {
+        font-size: 0.96rem;
+    }
+
+    .vm-related-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,282 @@
+.calendar-page {
+    min-height: 100vh;
+}
+
+.calendar-header {
+    background: linear-gradient(90deg, var(--green-dark), var(--green-mid));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.calendar-header h1 {
+    font-size: clamp(22px, 3.6vw, 36px);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.calendar-header p {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.calendar-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.calendar-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.calendar-legend-item {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+.calendar-legend-item.food {
+    background: var(--amber-light);
+    color: var(--amber);
+    border: 1px solid var(--amber);
+}
+
+.calendar-legend-item.housing {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border: 1px solid var(--green-pale);
+}
+
+.calendar-legend-item.breeding {
+    background: var(--amber-light);
+    color: var(--brown);
+    border: 1px solid var(--amber);
+}
+
+.calendar-legend-item.health {
+    background: var(--green-light);
+    color: var(--green-mid);
+    border: 1px solid var(--green-pale);
+}
+
+.calendar-legend-item.farm {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border: 1px solid var(--green-pale);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+
+.calendar-month {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 0.5px solid var(--gray-light);
+    background: var(--cream);
+}
+
+.calendar-month-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+}
+
+.calendar-month.winter .calendar-month-header {
+    background: var(--green-light);
+}
+
+.calendar-month.spring .calendar-month-header {
+    background: var(--green-light);
+}
+
+.calendar-month.summer .calendar-month-header {
+    background: var(--amber-light);
+}
+
+.calendar-month.autumn .calendar-month-header {
+    background: var(--amber-light);
+}
+
+.calendar-month-icon {
+    font-size: 22px;
+}
+
+.calendar-month-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 0;
+}
+
+.calendar-tasks {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.calendar-task-group {
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.calendar-task-group.food {
+    background: var(--amber-light);
+    border: 0.5px solid var(--amber);
+}
+
+.calendar-task-group.housing {
+    background: var(--green-light);
+    border: 0.5px solid var(--green-pale);
+}
+
+.calendar-task-group.breeding {
+    background: var(--amber-light);
+    border: 0.5px solid var(--amber);
+}
+
+.calendar-task-group.health {
+    background: var(--green-light);
+    border: 0.5px solid var(--green-pale);
+}
+
+.calendar-task-group.farm {
+    background: var(--green-light);
+    border: 0.5px solid var(--green-pale);
+}
+
+.calendar-task-cat {
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+    color: var(--green-dark);
+}
+
+.calendar-tasks ul {
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.calendar-tasks li {
+    font-size: 12px;
+    color: var(--green-dark);
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.calendar-tasks li:last-child {
+    margin-bottom: 0;
+}
+
+.calendar-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.calendar-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.calendar-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.calendar-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 16px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.calendar-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .calendar-related-title {
+    color: var(--green-light);
+}
+
+.calendar-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.calendar-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.calendar-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .calendar-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .calendar-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .calendar-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+
+    .calendar-related {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .calendar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .calendar-header {
+        padding: 1.5rem 1rem;
+    }
+}

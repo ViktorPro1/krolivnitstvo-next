@@ -1,0 +1,669 @@
+.economics-page {
+    min-height: 100vh;
+}
+
+.economics-header {
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid), var(--green-accent));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.economics-header h1 {
+    font-size: clamp(22px, 3.6vw, 36px);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.economics-header p {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.economics-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.economics-section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 2rem 0 1rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--green-light);
+}
+
+.economics-intro,
+.economics-note {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.economics-intro h2 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+}
+
+.economics-intro p,
+.economics-note p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.economics-alert {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.economics-alert.ok {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border-left: 3px solid var(--green-dark);
+}
+
+.economics-alert.warn {
+    background: var(--amber-light);
+    color: var(--brown);
+    border-left: 3px solid var(--amber);
+}
+
+/* STARTUP */
+.economics-startup-block {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.economics-startup-cat {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.economics-startup-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.economics-startup-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: start;
+    padding: 8px 0;
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.economics-startup-item:last-child {
+    border-bottom: none;
+}
+
+.economics-startup-name {
+    font-size: 14px;
+    color: var(--green-dark);
+    grid-column: 1;
+}
+
+.economics-price-range {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-mid);
+    white-space: nowrap;
+}
+
+.economics-startup-note {
+    font-size: 12px;
+    color: var(--gray);
+    grid-column: 1 / -1;
+    font-style: italic;
+}
+
+/* TOTAL BOX */
+.economics-total-box {
+    background: var(--green-light);
+    border-radius: 16px;
+    border: 0.5px solid var(--green-accent);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.economics-total-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+.economics-total-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.economics-total-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cream);
+    border-radius: 10px;
+    padding: 10px 14px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.economics-total-item span {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.economics-total-item strong {
+    font-size: 16px;
+    color: var(--green-dark);
+    white-space: nowrap;
+}
+
+/* EXPENSE BLOCKS */
+.economics-expense-block {
+    margin-bottom: 1.5rem;
+}
+
+.economics-expense-cat {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+}
+
+/* TABLE */
+.economics-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.economics-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: var(--cream);
+    min-width: 480px;
+}
+
+.economics-table th {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.economics-table td {
+    padding: 10px 12px;
+    border-bottom: 0.5px solid var(--gray-light);
+    color: var(--green-dark);
+    vertical-align: top;
+}
+
+.economics-table tr:nth-child(even) td {
+    background: var(--green-light);
+}
+
+.economics-table tr:hover td {
+    background: var(--green-light);
+}
+
+.economics-table tr:last-child td {
+    border-bottom: none;
+}
+
+.eco-price {
+    color: var(--green-mid);
+    font-weight: 500;
+}
+
+.eco-income {
+    color: var(--green-mid);
+    font-weight: 500;
+}
+
+.eco-expense {
+    color: var(--amber);
+}
+
+.eco-profit.positive {
+    color: var(--green-dark);
+    font-weight: 500;
+}
+
+/* TABS */
+.economics-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.economics-tab-btn {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--gray-light);
+    background: var(--cream);
+    font-size: 13px;
+    color: var(--gray);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.economics-tab-btn:hover {
+    border-color: var(--green-accent);
+    color: var(--green-dark);
+}
+
+.economics-tab-btn.active {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    border-color: var(--green-dark);
+}
+
+/* MODEL CARD */
+.economics-model-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.economics-model-desc {
+    font-size: 14px;
+    color: var(--gray);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.economics-model-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.economics-model-subtitle {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.economics-param-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.economics-param-row span {
+    color: var(--gray);
+}
+
+.economics-param-row strong {
+    color: var(--green-dark);
+}
+
+.economics-calc-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.economics-calc-row.income strong {
+    color: var(--green-mid);
+}
+
+.economics-calc-row.expense strong {
+    color: var(--amber);
+}
+
+.economics-calc-row span {
+    color: var(--gray);
+}
+
+.economics-profit-box {
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+}
+
+.economics-profit-box strong {
+    font-size: 18px;
+}
+
+.economics-profit-box.medium {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border: 1px solid var(--green-pale);
+}
+
+.economics-profit-box.high {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border: 2px solid var(--green-dark);
+}
+
+.economics-model-note {
+    font-size: 13px;
+    color: var(--gray);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* RISKS */
+.economics-risks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.economics-risk-card {
+    background: var(--cream);
+    border-radius: 14px;
+    border: 0.5px solid var(--gray-light);
+    border-left: 4px solid var(--amber);
+    overflow: hidden;
+}
+
+.economics-risk-top {
+    padding: 12px 14px;
+    background: var(--amber-light);
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.economics-risk-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--brown);
+    margin-bottom: 6px;
+}
+
+.economics-risk-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.economics-risk-prob,
+.economics-risk-impact {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.economics-risk-solution {
+    display: flex;
+    gap: 10px;
+    padding: 12px 14px;
+    align-items: flex-start;
+}
+
+.economics-risk-solution span {
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.economics-risk-solution p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* TIPS */
+.economics-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 1rem;
+}
+
+.economics-tip-card {
+    background: var(--cream);
+    border-radius: 14px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.25rem;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.economics-tip-icon {
+    font-size: 26px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.economics-tip-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+}
+
+.economics-tip-card p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CONCLUSION */
+.economics-conclusion {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.economics-conclusion h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 1rem;
+}
+
+.economics-conclusion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.economics-conclusion-yes {
+    background: var(--green-light);
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.economics-conclusion-no {
+    background: var(--amber-light);
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.economics-conclusion-yes h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+}
+
+.economics-conclusion-no h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+.economics-conclusion-yes ul,
+.economics-conclusion-no ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.economics-conclusion-yes li,
+.economics-conclusion-no li {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 4px;
+}
+
+/* BACK */
+.economics-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.economics-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.economics-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.economics-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 16px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.economics-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .economics-related-title {
+    color: var(--green-light);
+}
+
+.economics-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.economics-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.economics-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .economics-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .economics-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .economics-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+
+    .economics-related {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .economics-model-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .economics-tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .economics-conclusion-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .economics-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .economics-startup-item {
+        grid-template-columns: 1fr;
+    }
+
+    .economics-table th,
+    .economics-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .economics-tabs {
+        gap: 6px;
+    }
+
+    .economics-tab-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

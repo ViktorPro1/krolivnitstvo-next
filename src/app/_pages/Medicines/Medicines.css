@@ -1,0 +1,402 @@
+.med-page {
+    min-height: 100vh;
+}
+
+.med-header {
+    background: linear-gradient(90deg, var(--green-dark), var(--green-mid));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.med-header h1 {
+    font-size: clamp(22px, 3.6vw, 36px);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.med-header p {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.med-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.med-notice {
+    background: var(--amber-light);
+    border-left: 3px solid var(--amber);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--brown);
+    margin-bottom: 1.2rem;
+}
+
+.med-search-row {
+    margin-bottom: 1rem;
+}
+
+.med-search {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--gray-light);
+    border-radius: 999px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+    background: var(--cream);
+    color: var(--green-dark);
+}
+
+.med-search:focus {
+    border-color: var(--green-mid);
+}
+
+.med-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.med-cat-btn {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--gray-light);
+    background: var(--cream);
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.2s;
+}
+
+.med-cat-btn.active,
+.med-cat-btn:hover {
+    background: var(--green-dark);
+    color: white;
+    border-color: var(--green-dark);
+}
+
+.med-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.med-empty {
+    text-align: center;
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
+.med-card {
+    background: var(--cream);
+    border-radius: 14px;
+    border: 0.5px solid var(--gray-light);
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.med-card:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.med-card.injection {
+    border-color: var(--green-pale);
+}
+
+.med-card.injection .med-card-name {
+    color: var(--green-dark);
+}
+
+.med-card.injection .med-card-body {
+    background: var(--green-light);
+}
+
+.med-card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 1rem;
+}
+
+.med-card-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.med-card-info {
+    flex: 1;
+}
+
+.med-card-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+}
+
+.med-card-desc {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.med-chevron {
+    font-size: 11px;
+    color: var(--gray);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.med-card-body {
+    border-top: 0.5px solid var(--gray-light);
+    padding: 1rem;
+    background: var(--green-light);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Блок "Що це і від чого" */
+.med-what-is-it {
+    background: var(--amber-light);
+    border-left: 3px solid var(--amber);
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 4px;
+}
+
+.med-what-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--brown);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 4px;
+}
+
+.med-what-is-it p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.med-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 13px;
+    color: var(--green-dark);
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid var(--green-pale);
+}
+
+.med-row:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.med-row-label {
+    font-weight: 500;
+    color: var(--green-dark);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+/* Дози окремо */
+.med-row.dose-prev {
+    background: var(--green-light);
+    border-radius: 6px;
+    padding: 8px 10px;
+    border-bottom: none;
+    margin-bottom: 2px;
+}
+
+.med-row.dose-treat {
+    background: var(--amber-light);
+    border-radius: 6px;
+    padding: 8px 10px;
+    border-bottom: none;
+    margin-bottom: 2px;
+}
+
+.med-row.dose-prev .med-row-label {
+    color: var(--green-dark);
+}
+
+.med-row.dose-treat .med-row-label {
+    color: var(--brown);
+}
+
+.med-card.injection .med-row-label {
+    color: var(--green-dark);
+}
+
+.med-card.injection .med-row {
+    border-bottom-color: var(--green-pale);
+}
+
+.med-warning {
+    background: var(--amber-light);
+    border-left: 3px solid var(--amber);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: var(--brown);
+    margin-top: 4px;
+}
+
+/* ── Техніка ін'єкцій ── */
+.med-injection-tip {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--green-pale);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.med-tip-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 1rem;
+}
+
+.med-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.med-tip-card {
+    background: var(--green-light);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 0.5px solid var(--green-pale);
+}
+
+.med-tip-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+}
+
+.med-tip-card p {
+    font-size: 12px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.med-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.med-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.med-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.med-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.med-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .med-related-title {
+    color: var(--green-light);
+}
+
+.med-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.med-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.med-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .med-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .med-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .med-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .med-tip-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .med-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .med-card-top {
+        padding: 0.9rem;
+    }
+
+    .med-card-body {
+        padding: 0.9rem;
+    }
+
+    .med-injection-tip {
+        padding: 1rem;
+    }
+}

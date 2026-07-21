@@ -1,0 +1,464 @@
+.newfood-page {
+    min-height: 100vh;
+}
+
+.newfood-header {
+    background: linear-gradient(90deg, var(--green-dark), var(--green-mid));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.newfood-header h1 {
+    font-size: clamp(22px, 3.6vw, 36px);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.newfood-header p {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.newfood-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.newfood-section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin: 2rem 0 1rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--green-light);
+}
+
+/* ── MYTH BANNER ── */
+
+.newfood-myth {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--amber-light);
+    border-left: 4px solid var(--amber);
+    border-radius: 14px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: var(--green-dark);
+    line-height: 1.7;
+}
+
+.newfood-myth-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.newfood-myth strong {
+    color: var(--green-dark);
+}
+
+/* ── ALERT ── */
+
+.newfood-alert {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.newfood-alert.warn {
+    background: var(--amber-light);
+    color: var(--amber);
+    border-left: 3px solid var(--amber);
+}
+
+.newfood-alert.ok {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border-left: 3px solid var(--green-dark);
+}
+
+/* ── CARDS ── */
+
+.newfood-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.newfood-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.newfood-card.danger {
+    background: var(--amber-light);
+    border-color: var(--amber);
+}
+
+.newfood-card.warning {
+    background: var(--amber-light);
+    border-color: var(--amber);
+}
+
+.newfood-card.ok {
+    background: var(--green-light);
+    border-color: var(--green-pale);
+}
+
+.newfood-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+}
+
+.newfood-card-header span:first-child {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.newfood-card p {
+    font-size: 13px;
+    color: var(--green-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── TABLE ── */
+
+.newfood-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.newfood-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: var(--cream);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.newfood-table th {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.newfood-table td {
+    padding: 10px 14px;
+    border-bottom: 0.5px solid var(--gray-light);
+    color: var(--green-dark);
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.newfood-table tr:last-child td {
+    border-bottom: none;
+}
+
+.newfood-table tr:hover td {
+    background: var(--green-light);
+}
+
+.newfood-row-done td {
+    background: var(--green-light);
+}
+
+.newfood-table-sub {
+    font-size: 12px;
+    color: var(--gray);
+    display: block;
+}
+
+/* ── КАЛЬКУЛЯТОР ── */
+
+.newfood-calc {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.newfood-calc-desc {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0 0 1.2rem;
+}
+
+.newfood-calc-inputs {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+
+.newfood-input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.newfood-input-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+}
+
+.newfood-input {
+    padding: 10px 12px;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--green-dark);
+    background: var(--cream);
+    width: 100%;
+    max-width: 160px;
+}
+
+.newfood-days-btns {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.newfood-day-btn {
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--gray-light);
+    background: var(--cream);
+    font-size: 14px;
+    color: var(--green-dark);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.newfood-day-btn:hover,
+.newfood-day-btn.active {
+    background: var(--green-dark);
+    color: white;
+    border-color: var(--green-dark);
+}
+
+/* ── PROGRESS BAR ── */
+
+.newfood-bar-wrap {
+    display: flex;
+    height: 8px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: var(--gray-light);
+    margin-bottom: 3px;
+}
+
+.newfood-bar-old {
+    background: var(--amber);
+    transition: width 0.3s ease;
+}
+
+.newfood-bar-new {
+    background: var(--green-mid);
+    transition: width 0.3s ease;
+}
+
+.newfood-bar-label {
+    font-size: 11px;
+    color: var(--gray);
+}
+
+/* ── RULES ── */
+
+.newfood-rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.newfood-rule-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.25rem;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.newfood-rule-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.newfood-rule-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+}
+
+.newfood-rule-card p {
+    font-size: 13px;
+    color: var(--green-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── SUMMARY ── */
+
+.newfood-summary {
+    background: var(--green-dark);
+    color: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.newfood-summary h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 8px;
+    opacity: 0.9;
+}
+
+.newfood-summary p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* ── BACK ── */
+
+.newfood-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.newfood-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.newfood-back-btn:hover {
+    background: var(--green-mid);
+}
+
+.newfood-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.newfood-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .newfood-related-title {
+    color: var(--green-light);
+}
+
+.newfood-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.newfood-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.newfood-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .newfood-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .newfood-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .newfood-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+}
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 768px) {
+
+    .newfood-cards-grid,
+    .newfood-rules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newfood-calc-inputs {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .newfood-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .newfood-table th,
+    .newfood-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .newfood-input {
+        max-width: 100%;
+    }
+}

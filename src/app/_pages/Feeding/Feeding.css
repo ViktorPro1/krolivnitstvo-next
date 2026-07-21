@@ -1,0 +1,305 @@
+.feeding-page {
+    min-height: 100vh;
+}
+
+.feeding-header {
+    background: linear-gradient(90deg, var(--green-dark), var(--green-mid));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.feeding-header h1 {
+    font-size: clamp(22px, 3.6vw, 36px);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.feeding-header p {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.feeding-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.feeding-section {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 0.5px solid var(--gray-light);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feeding-section h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+}
+
+.feeding-section p {
+    font-size: 14px;
+    color: var(--green-dark);
+    line-height: 1.7;
+}
+
+.feeding-list {
+    padding-left: 1.2rem;
+    margin-top: 8px;
+}
+
+.feeding-list li {
+    font-size: 14px;
+    color: var(--green-dark);
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+.feeding-table-wrap {
+    overflow-x: auto;
+}
+
+.feeding-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.feeding-table th {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.feeding-table td {
+    padding: 10px 12px;
+    border-bottom: 0.5px solid var(--gray-light);
+    color: var(--green-dark);
+    vertical-align: top;
+}
+
+.feeding-table tr:last-child td {
+    border-bottom: none;
+}
+
+.feeding-badge {
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.feeding-badge.allowed {
+    background: var(--green-light);
+    color: var(--green-mid);
+    border: 1px solid var(--green-pale);
+}
+
+.feeding-badge.forbidden {
+    background: var(--amber-light);
+    color: var(--amber);
+    border: 1px solid var(--amber);
+}
+
+.feeding-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feeding-back-btn {
+    background: var(--green-dark);
+    color: var(--green-pale);
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.feeding-back-btn:hover {
+    background: var(--green-mid);
+}
+
+/* ЛІКУВАЛЬНІ ТРАВИ */
+.feeding-herbs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 1rem;
+}
+
+.feeding-herb-card {
+    background: var(--cream);
+    border-radius: 14px;
+    border: 0.5px solid var(--gray-light);
+    overflow: hidden;
+}
+
+.feeding-herb-card.safe {
+    border-left: 3px solid var(--green-dark);
+}
+
+.feeding-herb-card.caution {
+    border-left: 3px solid var(--amber);
+}
+
+.feeding-herb-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: var(--green-light);
+    border-bottom: 0.5px solid var(--gray-light);
+}
+
+.feeding-herb-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.feeding-herb-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-dark);
+}
+
+.feeding-herb-latin {
+    display: block;
+    font-size: 11px;
+    color: var(--gray);
+    font-style: italic;
+}
+
+.feeding-herb-badge {
+    margin-left: auto;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.feeding-herb-badge.safe {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border: 1px solid var(--green-pale);
+}
+
+.feeding-herb-badge.caution {
+    background: var(--amber-light);
+    color: var(--amber);
+    border: 1px solid var(--amber);
+}
+
+.feeding-herb-body {
+    padding: 12px 14px;
+}
+
+.feeding-herb-body p {
+    font-size: 13px;
+    color: var(--green-dark);
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+.feeding-herb-caution {
+    font-size: 12px !important;
+    color: var(--gray) !important;
+    font-style: italic;
+    margin-top: 6px !important;
+}
+
+/* BADGE CAUTION */
+.feeding-badge.caution {
+    background: var(--amber-light);
+    color: var(--amber);
+    border: 1px solid var(--amber);
+}
+
+.feeding-related {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-light);
+}
+
+.feeding-related-title {
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+[data-theme="dark"] .feeding-related-title {
+    color: var(--green-light);
+}
+
+.feeding-related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.feeding-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.feeding-related-link:hover {
+    background: var(--green-light);
+}
+
+[data-theme="dark"] .feeding-related-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--green-light);
+}
+
+[data-theme="dark"] .feeding-related-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+    .feeding-related-link {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .feeding-herbs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .feeding-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .feeding-section {
+        padding: 1rem;
+    }
+
+    .feeding-table th,
+    .feeding-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
