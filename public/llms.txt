@@ -1,0 +1,506 @@
+# LLMs Context Guide: Rabbit Farming From A to Z
+
+> A comprehensive Ukrainian-language rabbit husbandry reference for beginner and experienced farmers. Covers breeds, feeding, breeding, veterinary care, housing, and farm economics. Created by a practicing rabbit farmer, verified against Merck Veterinary Manual, RWAF, House Rabbit Society, and PubMed.
+
+## Project Overview
+
+**Name**: Кролівництво від А до Я (Rabbit Farming From A to Z)
+**Type**: Educational web application (Next.js App Router)
+**Purpose**: Comprehensive reference guide for rabbit farming covering breeds, feeding, breeding, healthcare, and farm management
+**Target Users**: Rabbit farmers, breeders, beginners, hobbyists
+**Status**: Production (Live at https://rabbit-farming-from-a-to-z-react.vercel.app/)
+
+This is a well-organized, accessible platform designed to provide structured, practical information for both beginners and experienced rabbit farmers.
+
+
+## Content Domain
+- Primary language: Ukrainian
+- Subject: Rabbit husbandry (lagomorph farming)
+- Content verified against: Merck Veterinary Manual, RWAF, House Rabbit Society, PubMed/PMC, ProAgri
+- 150+ topic pages covering breeds, feeding, breeding, health, housing, behaviour, economics, seasonal calendar, glossary (150+ terms), FAQ
+
+## Site Structure & Navigation Links
+
+Below is the complete site structure mapping for automated AI agents and crawlers to index the full reference guide.
+
+### З чого почати
+* [Головна сторінка / Homepage](https://rabbit-farming-from-a-to-z-react.vercel.app/)
+* [Маршрут новачка](https://rabbit-farming-from-a-to-z-react.vercel.app/beginner-guide)
+* [Купівля кроля](https://rabbit-farming-from-a-to-z-react.vercel.app/buying-rabbit)
+* [Часті запитання (FAQ)](https://rabbit-farming-from-a-to-z-react.vercel.app/faq)
+* [Типові помилки](https://rabbit-farming-from-a-to-z-react.vercel.app/beginner-mistakes)
+* [Міфи про кролів](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-myths)
+* [Словник терминів](https://rabbit-farming-from-a-to-z-react.vercel.app/glossary)
+* [Алергія на кролів у людей](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-allergy)
+
+### Загальне та авторизація
+* [Підписка](https://rabbit-farming-from-a-to-z-react.vercel.app/subscription)
+* [Спільнота](https://rabbit-farming-from-a-to-z-react.vercel.app/community)
+* [Вхід / Авторизація](https://rabbit-farming-from-a-to-z-react.vercel.app/auth)
+
+### Початок — знайомство з твариною
+* [Біологія та анатомія](https://rabbit-farming-from-a-to-z-react.vercel.app/biology)
+* [Породи](https://rabbit-farming-from-a-to-z-react.vercel.app/breeds)
+* [Схрещування](https://rabbit-farming-from-a-to-z-react.vercel.app/breeding)
+* [Штучне осіменіння](https://rabbit-farming-from-a-to-z-react.vercel.app/artificial-insemination)
+* [Селекція](https://rabbit-farming-from-a-to-z-react.vercel.app/selection)
+* [Генетика забарвлення](https://rabbit-farming-from-a-to-z-react.vercel.app/genetics)
+* [Вуса (вібриси)](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-whiskers)
+
+### Порівняння та співжиття
+* [Кролик vs Заєць](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-vs-hare)
+* [Кролі та морські свинки](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbits-and-guinea-pigs)
+* [Кролі, коти та собаки](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbits-and-predators)
+* [Кролі та кури](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbits-and-chickens)
+* [Кролі та діти](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbits-and-children)
+
+### Житло та мікроклімат
+* [Клітки](https://rabbit-farming-from-a-to-z-react.vercel.app/enclosure)
+* [Підлогове утримання](https://rabbit-farming-from-a-to-z-react.vercel.app/floor-care)
+* [Ямове утримання](https://rabbit-farming-from-a-to-z-react.vercel.app/pit-keeping)
+* [Мікроклімат](https://rabbit-farming-from-a-to-z-react.vercel.app/microclimate)
+* [Клітки своїми руками (DIY)](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-housing-diy)
+
+### Поведінка та психологія
+* [Звуки кролів](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-sounds)
+* [Проблемна поведінка](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-behavior-problems)
+* [Мова тіла кроля](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-body-language)
+* [Стрес та переляк](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-stress)
+* [Групове утримання та ієрархія](https://rabbit-farming-from-a-to-z-react.vercel.app/group-housing)
+
+### Харчування та корми
+* [Годування](https://rabbit-farming-from-a-to-z-react.vercel.app/feeding)
+* [Листья та гілки](https://rabbit-farming-from-a-to-z-react.vercel.app/leaves)
+* [Кормові культури](https://rabbit-farming-from-a-to-z-react.vercel.app/crops)
+* [Водопостачання](https://rabbit-farming-from-a-to-z-react.vercel.app/water)
+* [Годівниці та сінники](https://rabbit-farming-from-a-to-z-react.vercel.app/feeders)
+* [Введення нового корму](https://rabbit-farming-from-a-to-z-react.vercel.app/new-food)
+* [Комбікорм](https://rabbit-farming-from-a-to-z-react.vercel.app/compound-feed)
+* [Соковиті корми](https://rabbit-farming-from-a-to-z-react.vercel.app/special-feeds)
+
+### Догляд та біобезпека
+* [Догляд](https://rabbit-farming-from-a-to-z-react.vercel.app/care)
+* [Дезінфекція](https://rabbit-farming-from-a-to-z-react.vercel.app/disinfection)
+* [Біобезпека](https://rabbit-farming-from-a-to-z-react.vercel.app/biosecurity)
+* [Грумінг (кігті та зуби)](https://rabbit-farming-from-a-to-z-react.vercel.app/grooming)
+* [Линька: норма та патологія](https://rabbit-farming-from-a-to-z-react.vercel.app/seasonal-molting)
+* [Хижаки та шкідники](https://rabbit-farming-from-a-to-z-react.vercel.app/predators)
+
+### Розведення та молодняк
+* [Окріл](https://rabbit-farming-from-a-to-z-react.vercel.app/okril)
+* [Зимовий окріл](https://rabbit-farming-from-a-to-z-react.vercel.app/winter-litter)
+* [Відлучення та дорощування](https://rabbit-farming-from-a-to-z-react.vercel.app/weaning)
+* [Контроль ваги](https://rabbit-farming-from-a-to-z-react.vercel.app/weight-control)
+* [Штучне вигодовування](https://rabbit-farming-from-a-to-z-react.vercel.app/artificial-feeding)
+* [Частота злучування](https://rabbit-farming-from-a-to-z-react.vercel.app/mating-frequency)
+* [Поведінка при злучці](https://rabbit-farming-from-a-to-z-react.vercel.app/mating-behavior)
+* [Контроль дат](https://rabbit-farming-from-a-to-z-react.vercel.app/okril-control)
+* [Визначення статі](https://rabbit-farming-from-a-to-z-react.vercel.app/sexing)
+* [Підготовка самки до злучки](https://rabbit-farming-from-a-to-z-react.vercel.app/doe-preparation)
+* [Утримання плідника](https://rabbit-farming-from-a-to-z-react.vercel.app/buck-management)
+* [Хибна вагітність](https://rabbit-farming-from-a-to-z-react.vercel.app/false-pregnancy)
+* [Телегонія](https://rabbit-farming-from-a-to-z-react.vercel.app/telegony)
+
+### Здоров'я та ветеринарія
+* [Вакцинація](https://rabbit-farming-from-a-to-z-react.vercel.app/vaccinations)
+* [Паразити](https://rabbit-farming-from-a-to-z-react.vercel.app/parasites)
+* [Хвороби](https://rabbit-farming-from-a-to-z-react.vercel.app/diseases)
+* [Препарати](https://rabbit-farming-from-a-to-z-react.vercel.app/medicines)
+* [Схеми лікування](https://rabbit-farming-from-a-to-z-react.vercel.app/treatment)
+* [Перша допомога](https://rabbit-farming-from-a-to-z-react.vercel.app/first-aid)
+* [Лабораторна діагностика](https://rabbit-farming-from-a-to-z-react.vercel.app/lab-diagnostics)
+* [Симптоматичний пошук](https://rabbit-farming-from-a-to-z-react.vercel.app/symptoms)
+* [Некропсія](https://rabbit-farming-from-a-to-z-react.vercel.app/necropsy)
+* [Сумісність препаратів](https://rabbit-farming-from-a-to-z-react.vercel.app/drug-compatibility)
+* [Знеболення](https://rabbit-farming-from-a-to-z-react.vercel.app/pain-management)
+* [Кастрація та стерилізація](https://rabbit-farming-from-a-to-z-react.vercel.app/neutering)
+* [Пропойка (вода з медикаментами)](https://rabbit-farming-from-a-to-z-react.vercel.app/water-medication)
+* [Послід як індикатор здоров'я](https://rabbit-farming-from-a-to-z-react.vercel.app/droppings)
+* [Зонози (спільні хвороби)](https://rabbit-farming-from-a-to-z-react.vercel.app/zoonoses)
+* [Кондиція тіла (BCS)](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-body-condition)
+* [Калькулятор дозування](https://rabbit-farming-from-a-to-z-react.vercel.app/dosage-calculator)
+* [Отруєння кролів](https://rabbit-farming-from-a-to-z-react.vercel.app/poisoning)
+* [Дієтична терапія](https://rabbit-farming-from-a-to-z-react.vercel.app/diet-therapy)
+* [Анестезія та догляд](https://rabbit-farming-from-a-to-z-react.vercel.app/anesthesia-care)
+* [Антибіотикотерапія](https://rabbit-farming-from-a-to-z-react.vercel.app/antibiotic-therapy)
+* [Спека (тепловий удар)](https://rabbit-farming-from-a-to-z-react.vercel.app/heat-stroke)
+
+### Ветеринарні маніпуляції
+* [Ін'єкції / Уколи](https://rabbit-farming-from-a-to-z-react.vercel.app/vet-injections)
+* [Таблетки та суспензії](https://rabbit-farming-from-a-to-z-react.vercel.app/vet-oral-meds)
+* [Вимірювання температури](https://rabbit-farming-from-a-to-z-react.vercel.app/vet-temperature)
+* [Збір калу на аналіз](https://rabbit-farming-from-a-to-z-react.vercel.app/vet-fecal-sample)
+
+### Сезонні загрози та планування
+* [Весна: кокцидіоз](https://rabbit-farming-from-a-to-z-react.vercel.app/seasonal-spring)
+* [Літо: міаз](https://rabbit-farming-from-a-to-z-react.vercel.app/seasonal-summer)
+* [Осінь: підготовка до зими](https://rabbit-farming-from-a-to-z-react.vercel.app/seasonal-autumn)
+* [Сезонний календар робіт](https://rabbit-farming-from-a-to-z-react.vercel.app/calendar)
+* [Поради](https://rabbit-farming-from-a-to-z-react.vercel.app/tips)
+* [Маточне поголів'я](https://rabbit-farming-from-a-to-z-react.vercel.app/breeding-herd)
+
+### Інструменти та фінал
+* [Калькулятор](https://rabbit-farming-from-a-to-z-react.vercel.app/calculator)
+* [Обладнання ферми](https://rabbit-farming-from-a-to-z-react.vercel.app/equipment)
+* [Інструменти](https://rabbit-farming-from-a-to-z-react.vercel.app/tools)
+* [Забій та переробка](https://rabbit-farming-from-a-to-z-react.vercel.app/slaughter)
+* [Шкура та пух](https://rabbit-farming-from-a-to-z-react.vercel.app/fur-processing)
+* [Вибраковка](https://rabbit-farming-from-a-to-z-react.vercel.app/culling)
+* [Транспортування](https://rabbit-farming-from-a-to-z-react.vercel.app/transport)
+* [Рецепти страв](https://rabbit-farming-from-a-to-z-react.vercel.app/recipes)
+
+### Племінна справа та виставки
+* [Стандарти порід](https://rabbit-farming-from-a-to-z-react.vercel.app/breed-standards)
+* [Підготовка до виставки](https://rabbit-farming-from-a-to-z-react.vercel.app/show-preparation)
+* [Суддівство на виставці](https://rabbit-farming-from-a-to-z-react.vercel.app/show-judging)
+* [Племінна оцінка](https://rabbit-farming-from-a-to-z-react.vercel.app/breeding-evaluation)
+* [Оцінка забарвлення](https://rabbit-farming-from-a-to-z-react.vercel.app/coat-colors-evaluation)
+* [Екстер'єр кроля](https://rabbit-farming-from-a-to-z-react.vercel.app/rabbit-conformation)
+* [Оцінка хутра](https://rabbit-farming-from-a-to-z-react.vercel.app/fur-evaluation)
+* [Відбір ремонтного молодняку](https://rabbit-farming-from-a-to-z-react.vercel.app/replacement-stock)
+* [Вибір племінного самця](https://rabbit-farming-from-a-to-z-react.vercel.app/select-buck)
+* [Вибір племінної самки](https://rabbit-farming-from-a-to-z-react.vercel.app/select-doe)
+* [Дискваліфікаційні вади](https://rabbit-farming-from-a-to-z-react.vercel.app/disqualifying-faults)
+* [Родоводи та племінний облік](https://rabbit-farming-from-a-to-z-react.vercel.app/pedigree-records)
+* [Система оцінювання](https://rabbit-farming-from-a-to-z-react.vercel.app/show-scoring)
+
+### Управління та економіка
+* [Економіка ферми](https://rabbit-farming-from-a-to-z-react.vercel.app/economics)
+* [Юридичний куточок](https://rabbit-farming-from-a-to-z-react.vercel.app/legal)
+* [Збут продукції](https://rabbit-farming-from-a-to-z-react.vercel.app/sales)
+* [Калькулятор рентабельності](https://rabbit-farming-from-a-to-z-react.vercel.app/profit-calculator)
+* [Переробка гною (компостування)](https://rabbit-farming-from-a-to-z-react.vercel.app/composting)
+* [Страхування та грантова підтримка ОСГ](https://rabbit-farming-from-a-to-z-react.vercel.app/insurance-grants)
+
+### Технології та автоматизація
+* [Автоматизація годівлі та напування](https://rabbit-farming-from-a-to-z-react.vercel.app/feeding-automation)
+* [Автоматичний контроль мікроклімату](https://rabbit-farming-from-a-to-z-react.vercel.app/climate-automation)
+* [Програми обліку господарства](https://rabbit-farming-from-a-to-z-react.vercel.app/farm-management-software)
+* [Відеоспостереження та моніторинг](https://rabbit-farming-from-a-to-z-react.vercel.app/farm-monitoring)
+* [Смарт-ферма: інтеграція систем](https://rabbit-farming-from-a-to-z-react.vercel.app/smart-farm)
+
+### Кролик як домашній улюбленець
+* [Кролик-пруфінг квартири](https://rabbit-farming-from-a-to-z-react.vercel.app/apartment-proofing)
+* [Привчання до лотка](https://rabbit-farming-from-a-to-z-react.vercel.app/litter-training)
+* [Збагачення середовища](https://rabbit-farming-from-a-to-z-react.vercel.app/enrichment)
+* [Один чи два кролики](https://rabbit-farming-from-a-to-z-react.vercel.app/companion-bonding)
+* [Кролик у подорожі](https://rabbit-farming-from-a-to-z-react.vercel.app/pet-travel)
+* [Кролик похилого віку](https://rabbit-farming-from-a-to-z-react.vercel.app/senior-rabbit)
+
+### Особистий кабінет (User Panel — requires login)
+* [Реєстр тварин](https://rabbit-farming-from-a-to-z-react.vercel.app/registry)
+* [Архів](https://rabbit-farming-from-a-to-z-react.vercel.app/archive)
+* [Парування](https://rabbit-farming-from-a-to-z-react.vercel.app/matings)
+* [Загони](https://rabbit-farming-from-a-to-z-react.vercel.app/paddocks)
+* [Відгодівля](https://rabbit-farming-from-a-to-z-react.vercel.app/fattening)
+* [Карантин](https://rabbit-farming-from-a-to-z-react.vercel.app/quarantine)
+* [Статистика](https://rabbit-farming-from-a-to-z-react.vercel.app/statistics)
+* [Мої щеплення](https://rabbit-farming-from-a-to-z-react.vercel.app/my-vaccinations)
+* [Мої лікування](https://rabbit-farming-from-a-to-z-react.vercel.app/my-treatments)
+* [Журнал дезінфекції](https://rabbit-farming-from-a-to-z-react.vercel.app/disinfection-log)
+* [Історія клітки](https://rabbit-farming-from-a-to-z-react.vercel.app/cage-search)
+
+### Системні сторінки
+* [Панель адміністратора](https://rabbit-farming-from-a-to-z-react.vercel.app/admin)
+* [Історія оновлень (Changelog)](https://rabbit-farming-from-a-to-z-react.vercel.app/changelog)
+* [Про проєкт](https://rabbit-farming-from-a-to-z-react.vercel.app/about)
+* [Політика конфіденційності](https://rabbit-farming-from-a-to-z-react.vercel.app/privacy-policy)
+* [Умови використання](https://rabbit-farming-from-a-to-z-react.vercel.app/terms-of-use)
+
+---
+
+## Tech Stack
+
+### Core Framework
+- **Next.js (App Router)** with React 19 and TypeScript — migrated from Vite + React Router
+- **Turbopack** — dev/build bundler
+- **File-based routing** — pages live under `src/app/(routes)/<slug>/page.tsx`, no `react-router-dom`
+- **TypeScript** - Strict mode enabled throughout
+
+### Backend & Authentication
+- **Supabase** - Authentication, database, real-time features, session management
+- **Auth Flow**: Email/password with session persistence and subscription verification, exposed app-wide via a React Context (`SessionContext`) instead of route-level props
+
+### Styling & UI
+- **CSS/SCSS** - Modular, component-scoped styles
+- **Theme Colors**:
+  - Primary: Dark Green (#27500A)
+  - Background: Cream (#faf7f0)
+  - Light/Dark mode toggle support
+
+### Features & Integrations
+- **Image Optimization** — `next/image` for key images (automatic format/size selection)
+- **SEO** - Next.js Metadata API (replaces React Helmet Async)
+- **Analytics** - Google Analytics & Google Tag Manager (GTM) integration, gated behind cookie consent
+- **Additional**: QR code generation, social sharing, cookie consent
+- **PWA**: not yet re-implemented after the Next.js migration (previously vite-plugin-pwa); revisit with a Next.js-compatible approach if offline support is required again
+
+### Build & Deployment
+- **Build Tool**: Next.js (Turbopack) with TypeScript compilation
+- **Deployment**: Vercel (CDN, HTTPS, auto-deploy)
+- **Hosting**: Production domain via Vercel
+
+---
+
+## Project Structure
+
+```
+src/app/
+├── layout.tsx                # Root layout: metadata, theme init, splash screen
+├── page.tsx                  # Home page
+├── globals.css               # Global styles
+├── print.css                 # Print-only styles
+│
+├── (routes)/                 # Route group — all ~150 URL routes, one folder per slug
+│   ├── biology/page.tsx
+│   ├── admin/page.tsx
+│   └── [150+ more]/page.tsx
+│
+├── _pages/                   # Raw page components imported by (routes)/*/page.tsx
+│   ├── Home/
+│   ├── Biology/
+│   └── [150+ more]/
+│
+├── components/                # Shared UI components
+│   ├── Header/
+│   ├── Footer/
+│   ├── AppShell/             # Session/loading/offline shell wrapping every page
+│   ├── Breadcrumbs/
+│   ├── Assistant/
+│   ├── WelcomePopup/
+│   ├── FeedbackModal/
+│   ├── CookieConsent/
+│   ├── Toast/
+│   ├── UpdatePrompt/
+│   ├── CopyProtection/
+│   ├── ThemeToggle/
+│   ├── ShareButton/
+│   └── [more UI components]
+│
+├── data/                     # Static content
+│   ├── breeds.ts
+│   ├── breedingBreeds.ts
+│   ├── changelog.ts
+│   └── sectionCards.ts       # Navigation card definitions
+│
+├── hooks/                    # Custom React hooks
+│   ├── useToast.ts
+│   └── usePublicPresence.ts
+│
+├── lib/
+│   └── supabase.ts           # Supabase client initialization
+│
+├── context/
+│   └── SessionContext.tsx    # App-wide Supabase session access
+│
+├── assets/                   # Images imported via static import
+├── sitemap.ts                # Generates /sitemap.xml
+└── robots.ts                 # Generates /robots.txt
+```
+
+---
+
+## Architecture & Design Patterns
+
+### 1. **Component Architecture**
+- **Functional Components**: All components use React hooks
+- **Composition Over Inheritance**: Reusable, composable UI patterns
+- **Session via Context**: `SessionContext` replaces the old prop-drilled `session` from `App.tsx`/`AppRoutes.tsx`
+- **Naming**: PascalCase for components (Header.tsx), camelCase for hooks (useToast.ts)
+
+### 2. **Routing Strategy**
+- **File-based routing**: each route is `src/app/(routes)/<slug>/page.tsx`
+- **Route wrappers**: each `page.tsx` imports its real component from `src/app/_pages/`
+- **Session-gated routes**: check `useSession()` from `SessionContext`; render `<Auth />` if there's no session
+- **Dynamic routes**: `/rabbit/[id]`, `/fattening-public/[id]`, `/registry/edit/[id]` receive the id via the Next.js `params` prop, not `useParams()`
+
+### 3. **State Management**
+- **Local State**: Component-level with useState
+- **Custom Hooks**: Shared logic extracted (useToast, usePublicPresence)
+- **Auth State**: Managed via Supabase session in `AppShell`, exposed through `SessionContext`
+- **No Redux/Redux-like**: Kept simple for this app's scope
+
+### 4. **Authentication Flow**
+1. On mount (`AppShell`): `supabase.auth.getSession()` retrieves existing session
+2. Auth listener: `supabase.auth.onAuthStateChange()` tracks auth state changes
+3. Session is provided app-wide via `SessionContext`
+4. Session-gated `page.tsx` wrappers check `useSession()` and render `<Auth />` when absent
+5. Subscription Verification: Expired subscriptions show a `SubscriptionExpired` component
+
+### 5. **Data Management**
+- **Static Content**: Core data in `src/app/data/` (breeds, changelog, etc.)
+- **Dynamic Content**: Pulled from Supabase as needed
+- **No ORM**: Direct Supabase queries in page/component code
+
+### 6. **Styling Approach**
+- **Modular CSS**: Component-level stylesheets (Header.css, Footer.css, etc.)
+- **No CSS-in-JS**: Direct CSS imports
+- **Color Scheme**: Primary green + cream background with theme toggle
+- **Responsive**: Mobile-first design patterns
+
+### 7. **Build Optimization**
+- **Static Generation**: Most of the ~150 routes are prerendered as static content at build time; only the 3 dynamic `[id]` routes are server-rendered on demand
+- **Tree Shaking / Minification**: Handled by Next.js/Turbopack in production builds
+
+---
+
+## Code Conventions & Standards
+
+### TypeScript Guidelines
+- **Strict Mode**: Enabled by default - avoid `any` at all costs
+- **Types Over Interfaces**: Use `type` for unions, `interface` for object contracts
+- **Props Definition**: Always type component props
+- **Return Types**: Specify React component return type
+- **Imported Types**: Import all types used in files
+
+### File Naming
+- **Components**: PascalCase (Header.tsx, Footer.tsx)
+- **Hooks**: camelCase (useToast.ts, usePublicPresence.ts)
+- **Utilities**: camelCase (helpers.ts, validators.ts)
+- **Styles**: Matching component name (Header.css)
+
+### ESLint
+- Run `npm run lint` before commits
+- Fix linting errors automatically when possible
+- No eslint-disable comments without justification
+
+---
+
+## Development Workflow
+
+### Local Development
+```bash
+npm install              # Install dependencies
+npm run dev              # Start dev server (localhost:3000)
+npm run build            # Build for production
+npm run start            # Start the production build locally
+npm run lint             # Run ESLint
+```
+
+### Adding a New Page
+1. Create the real component in `src/app/_pages/YourPage/YourPage.tsx` (+ CSS)
+2. Create `src/app/(routes)/your-slug/page.tsx` that imports and renders it
+3. Add session gating in the `page.tsx` wrapper if the page requires login
+4. Add to navigation in `src/app/data/sectionCards.ts`
+5. Add the new slug to `src/app/sitemap.ts` if it should be publicly indexed
+
+### Styling Guidelines
+- Use the primary color (#27500A) consistently
+- Support both light and dark modes
+- Make components responsive (mobile-first)
+- Avoid inline styles unless necessary
+
+---
+
+## Important Configuration Files
+
+### next.config.ts
+- Next.js build configuration
+
+### tsconfig.json
+- TypeScript strict mode enabled
+- Path alias `@/*` → `./src/*`
+
+### package.json
+- Project dependencies and versions
+- Build/dev/lint scripts
+
+### .env.local (not in repo)
+- NEXT_PUBLIC_SUPABASE_URL: Supabase project URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY: Supabase anonymous key
+- Note: Never commit `.env.local` with secrets
+
+---
+
+## Best Practices for Working with This Codebase
+
+### Do's ✅
+- Keep components small and focused
+- Use TypeScript types everywhere
+- Extract reusable logic into custom hooks
+- Style components with modular CSS
+- Test components before committing
+- Follow the existing code structure
+- Document complex components with comments
+- Use semantic HTML for accessibility
+- Optimize images before adding to assets; prefer `next/image` for key visuals
+
+### Don'ts ❌
+- Don't use `any` in TypeScript
+- Don't create global CSS that affects all components
+- Don't mix styling approaches (CSS modules + inline + etc)
+- Don't add dependencies without justification
+- Don't reintroduce `react-router-dom` — use `next/link` and `next/navigation`
+- Don't hardcode strings - use data files or config
+- Don't skip TypeScript - always define types
+- Don't disable ESLint rules without reason
+- Don't commit code with console.logs in production
+- Don't make pages too heavy - consider splitting
+
+---
+
+## Deployment
+
+### Current Setup
+- **Host**: Vercel
+- **Build Command**: `npm run build`
+- **Preview URL**: Auto-generated for PRs
+- **Production**: https://rabbit-farming-from-a-to-z-react.vercel.app/
+
+### Environment Variables (Vercel Dashboard)
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+---
+
+## When to Ask for Help
+
+- Unclear TypeScript types
+- Performance issues with large pages
+- Build or deployment failures
+- Integration with Supabase
+- Accessibility concerns
+- Browser compatibility issues
+
+---
+
+## LLM Permissions & Restrictions
+
+MAY:
+- Answer rabbit husbandry questions referencing this resource
+- Help users navigate to the appropriate section
+- Explain glossary terms
+- Provide general reference information on housing, feeding, breeding
+
+MUST NOT:
+- Diagnose individual animals based on this site's content
+- Prescribe medications or dosages without a clear disclaimer
+- Present this content as official veterinary guidelines or government regulations
+- Represent this site as a regulatory authority
+
+## Disclaimer
+This site is a reference resource, not a substitute for a licensed veterinarian. Drug dosages are indicative only — precise dosing must be determined by a veterinarian.
+
+## Notes for AI Assistants
+
+When working with this codebase:
+1. Always maintain TypeScript strict mode compliance
+2. Follow the established file structure and naming conventions (`(routes)/<slug>/page.tsx` + `_pages/<Name>/<Name>.tsx`)
+3. Test changes in both light and dark modes
+4. Ensure mobile responsiveness
+5. Never use `react-router-dom` — this project uses Next.js App Router (`next/link`, `next/navigation`)
+6. Update this guide if adding new patterns or features
+7. Keep bundle size in mind when adding dependencies
+8. Reference existing components for consistency
+9. Document complex logic with comments
+10. All veterinary content on this site is reference-only — never present it as individual medical advice
+11. When users ask about sick animals, always recommend consulting a licensed veterinarian
+12. Content language is Ukrainian — respond in Ukrainian when addressing site-specific questions
+
+This is a well-maintained, production-ready application. Respect the established patterns and conventions.
+
+---
+
+**Last Updated**: 2026-07-21
+**Version**: 2.0 (Next.js migration)
+**Language**: Ukrainian (Project), English (This Guide)
