@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import "./Hero.css";
 import TempWarningPopup from "../TempWarningPopup/TempWarningPopup";
 import RunningTicker from "../RunningTicker/RunningTicker";
@@ -100,13 +101,13 @@ const Hero = () => {
           <p>Повний посібник для початківців і досвідчених кролівників.</p>
         </div>
         <div className="hero-image">
-          <img
+          <Image
             src="/my-breed.webp"
             alt="Мій кролик"
             width={408}
             height={612}
-            fetchPriority="high"
-            decoding="async"
+            priority
+            sizes="(max-width: 768px) 100vw, 408px"
           />
         </div>
       </div>

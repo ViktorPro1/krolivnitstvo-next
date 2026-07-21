@@ -3,10 +3,10 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { supabase } from "../../../lib/supabase";
+import { supabase } from "../../lib/supabase";
 import type { Session } from "@supabase/supabase-js";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import { CHANGELOG } from "../../../data/changelog";
+import { CHANGELOG } from "../../data/changelog";
 import {
   Calculator,
   Users,

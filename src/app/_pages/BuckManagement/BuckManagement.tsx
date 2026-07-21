@@ -508,7 +508,7 @@ const BuckManagement = () => {
           ].map((link) => (
             <Link
               key={link.to}
-              to={link.to}
+              href={link.to}
               style={{
                 display: "inline-block",
                 padding: "0.35rem 0.75rem",

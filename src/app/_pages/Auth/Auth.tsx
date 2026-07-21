@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabase";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import "./Auth.css";
 
 type Mode = "login" | "register";

@@ -1,8 +1,12 @@
+import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import femaleImg from "../../assets/female.webp";
 import maleImg from "../../assets/male.webp";
 import "./Sexing.css";
 import ShareButton from "../../components/ShareButton/ShareButton";
+
+const femaleSrc = typeof femaleImg === "string" ? femaleImg : femaleImg.src;
+const maleSrc = typeof maleImg === "string" ? maleImg : maleImg.src;
 
 const Sexing = () => {
   return (
@@ -92,12 +96,12 @@ const Sexing = () => {
 
         <div className="sexing-images">
           <figure>
-            <img src={femaleImg} alt="Вульва самки кролика" />
+            <img src={femaleSrc} alt="Вульва самки кролика" />
             <figcaption>Самець</figcaption>
           </figure>
 
           <figure>
-            <img src={maleImg} alt="Статевий орган самця кролика" />
+            <img src={maleSrc} alt="Статевий орган самця кролика" />
             <figcaption>Самка</figcaption>
           </figure>
         </div>
@@ -330,7 +334,7 @@ const Sexing = () => {
           ].map((link) => (
             <Link
               key={link.to}
-              to={link.to}
+              href={link.to}
               style={{
                 display: "inline-block",
                 padding: "0.35rem 0.75rem",

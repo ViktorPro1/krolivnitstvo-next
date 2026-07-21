@@ -689,7 +689,7 @@ const MatingPage = () => {
               desc: "Норми приросту молодняку",
             },
           ].map((link) => (
-            <Link key={link.to} to={link.to} className="mat-link-card">
+            <Link key={link.to} href={link.to} className="mat-link-card">
               <span>{link.icon}</span>
               <div>
                 <strong>{link.title}</strong>

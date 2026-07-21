@@ -369,7 +369,9 @@ type Tab = "grain" | "dates";
 type GrainMode = "breeding" | "fattening";
 type CalcType = "" | "birth" | "mating";
 
-export default function Calculator() {
+interface CalculatorProps { session?: any; }
+
+export default function Calculator({ session }: CalculatorProps) {
   const [tab, setTab] = useState<Tab>("grain");
 
   // --- Зернова суміш ---

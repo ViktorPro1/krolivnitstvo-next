@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import "./Assistant.css";
-import { groups } from "../../../data/sectionCards";
+import { groups } from "../../data/sectionCards";
 
 // --- ТИПИ ДАНИХ ---
 interface Message {

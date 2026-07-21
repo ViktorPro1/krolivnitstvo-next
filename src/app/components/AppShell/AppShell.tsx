@@ -1,17 +1,26 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useState, useCallback, type ReactNode } from "react";
-import { supabase } from "../../../lib/supabase";
+import { supabase } from "../../lib/supabase";
 import type { Session } from "@supabase/supabase-js";
 import CopyProtection from "../CopyProtection/CopyProtection";
-import Assistant from "../Assistant/Assistant";
+const Assistant = dynamic(() => import("../Assistant/Assistant"), {
+  ssr: false,
+});
 import WelcomePopup from "../WelcomePopup/WelcomePopup";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { UpdatePrompt } from "../UpdatePrompt/UpdatePrompt";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
-import AssistantPromo from "../AssistantPromo/AssistantPromo";
-import CookieConsentBanner from "../CookieConsent/CookieConsent";
+const AssistantPromo = dynamic(
+  () => import("../AssistantPromo/AssistantPromo"),
+  { ssr: false },
+);
+const CookieConsentBanner = dynamic(
+  () => import("../CookieConsent/CookieConsent"),
+  { ssr: false },
+);
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import { usePublicPresence } from "../../hooks/usePublicPresence";
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";

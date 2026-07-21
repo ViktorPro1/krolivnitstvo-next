@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import "./SectionCards.css";
-import { groups } from "../../../data/sectionCards";
+import { groups } from "../../data/sectionCards";
 
 const topicCards = groups
   .filter((g) => g.groupTitle !== "Статті")

@@ -1,7 +1,7 @@
 "use client";
 
 import DisinfectionLog from "../../_pages/DisinfectionLog/DisinfectionLog";
-import { useSession } from "../../../context/SessionContext";
+import { useSession } from "@/app/context/SessionContext";
 
 // УВАГА: в оригіналі ця сторінка не мала гейту на сесію (session!),
 // хоча компонент її очікує. Переглянь, чи потрібен тут захист,

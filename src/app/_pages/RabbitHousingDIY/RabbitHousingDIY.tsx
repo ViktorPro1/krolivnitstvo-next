@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import imgSingleWire from "../../assets/single-wire.webp";
@@ -24,7 +25,7 @@ interface DrawingCard {
   title: string;
   sub: string;
   dims: Dim[];
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
   cutlist: CutRow[];
   steps: string[];
   tip?: string;
@@ -531,7 +532,7 @@ const RabbitHousingDIY = () => {
                     {/* ЗОБРАЖЕННЯ / КРЕСЛЕННЯ */}
                     <div className="diy-drawing-box">
                       <img
-                        src={d.imageSrc}
+                        src={typeof d.imageSrc === "string" ? d.imageSrc : d.imageSrc.src}
                         alt={d.title}
                         className="diy-drawing-img"
                         loading="lazy"
@@ -723,7 +724,7 @@ const RabbitHousingDIY = () => {
           ].map((link) => (
             <Link
               key={link.to}
-              to={link.to}
+              href={link.to}
               style={{
                 display: "inline-block",
                 padding: "0.35rem 0.75rem",

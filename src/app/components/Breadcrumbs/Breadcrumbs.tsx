@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Breadcrumbs.css";
-import { groups } from "../../../data/sectionCards";
+import { groups } from "../../data/sectionCards";
 
 // ── Path -> назва розділу (для середньої хлібної крихти) ────────
 const PATH_TO_SECTION: Record<string, string> = {};
