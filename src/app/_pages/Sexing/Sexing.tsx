@@ -1,12 +1,9 @@
-import type { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import femaleImg from "../../assets/female.webp";
 import maleImg from "../../assets/male.webp";
 import "./Sexing.css";
 import ShareButton from "../../components/ShareButton/ShareButton";
-
-const femaleSrc = typeof femaleImg === "string" ? femaleImg : femaleImg.src;
-const maleSrc = typeof maleImg === "string" ? maleImg : maleImg.src;
 
 const Sexing = () => {
   return (
@@ -96,12 +93,20 @@ const Sexing = () => {
 
         <div className="sexing-images">
           <figure>
-            <img src={femaleSrc} alt="Вульва самки кролика" />
+            <Image
+              src={femaleImg}
+              alt="Вульва самки кролика"
+              sizes="(max-width: 768px) 100vw, 400px"
+            />
             <figcaption>Самець</figcaption>
           </figure>
 
           <figure>
-            <img src={maleSrc} alt="Статевий орган самця кролика" />
+            <Image
+              src={maleImg}
+              alt="Статевий орган самця кролика"
+              sizes="(max-width: 768px) 100vw, 400px"
+            />
             <figcaption>Самка</figcaption>
           </figure>
         </div>
@@ -311,9 +316,9 @@ const Sexing = () => {
         </p>
         <p style={{ fontSize: "0.9rem", lineHeight: 1.6, margin: 0 }}>
           <strong>Справжній крипторхізм</strong> — коли одне або обидва яєчка
-          ніколи не з'являються в мошонці навіть у розслабленого дорослого самця
-          у теплому приміщенні. Такий самець підлягає вибраковці з розведення:
-          ця вада спадкова.
+          ніколи не з&apos;являються в мошонці навіть у розслабленого дорослого
+          самця у теплому приміщенні. Такий самець підлягає вибраковці з
+          розведення: ця вада спадкова.
         </p>
       </section>
 
@@ -321,7 +326,7 @@ const Sexing = () => {
       <section className="sexing-section">
         <div className="sexing-section__header">
           <span className="sexing-section__icon">🔗</span>
-          <h2 className="sexing-section__title">Пов'язані розділи</h2>
+          <h2 className="sexing-section__title">Пов&apos;язані розділи</h2>
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
           {[

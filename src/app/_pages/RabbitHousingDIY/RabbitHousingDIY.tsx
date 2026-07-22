@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import imgSingleWire from "../../assets/single-wire.webp";
@@ -345,8 +346,8 @@ const RabbitHousingDIY = () => {
         <span className="diy-note__icon">📐</span>
         <span>
           На кожній картці відображено детальне креслення та специфікацію.
-          Розміри дані для середніх м'ясних порід (НЗБ, Каліфорнійський, 4–5
-          кг). Для великих порід (Фландр, Сірий велетень){" "}
+          Розміри дані для середніх м&apos;ясних порід (НЗБ, Каліфорнійський,
+          4–5 кг). Для великих порід (Фландр, Сірий велетень){" "}
           <strong>збільшуй всі габарити на 20–25%.</strong>
         </span>
       </div>
@@ -531,21 +532,40 @@ const RabbitHousingDIY = () => {
 
                     {/* ЗОБРАЖЕННЯ / КРЕСЛЕННЯ */}
                     <div className="diy-drawing-box">
-                      <img
-                        src={typeof d.imageSrc === "string" ? d.imageSrc : d.imageSrc.src}
-                        alt={d.title}
-                        className="diy-drawing-img"
-                        loading="lazy"
-                        style={{
-                          width: "100%",
-                          height: "auto",
-                          maxHeight: "320px",
-                          objectFit: "contain",
-                          borderRadius: "8px",
-                          display: "block",
-                          margin: "0 auto",
-                        }}
-                      />
+                      {typeof d.imageSrc === "string" ? (
+                        // eslint-disable-next-line @next/next/no-img-element -- динамічний рядковий шлях без відомих розмірів
+                        <img
+                          src={d.imageSrc}
+                          alt={d.title}
+                          className="diy-drawing-img"
+                          loading="lazy"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            maxHeight: "320px",
+                            objectFit: "contain",
+                            borderRadius: "8px",
+                            display: "block",
+                            margin: "0 auto",
+                          }}
+                        />
+                      ) : (
+                        <Image
+                          src={d.imageSrc}
+                          alt={d.title}
+                          className="diy-drawing-img"
+                          sizes="(max-width: 768px) 100vw, 600px"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            maxHeight: "320px",
+                            objectFit: "contain",
+                            borderRadius: "8px",
+                            display: "block",
+                            margin: "0 auto",
+                          }}
+                        />
+                      )}
                     </div>
 
                     {/* СПЕЦИФІКАЦІЯ */}
@@ -710,7 +730,7 @@ const RabbitHousingDIY = () => {
       <section className="diy-section">
         <div className="diy-section__header">
           <span className="diy-section__icon">🔗</span>
-          <div className="diy-section__title">Пов'язані розділи</div>
+          <div className="diy-section__title">Пов&apos;язані розділи</div>
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
           {[
