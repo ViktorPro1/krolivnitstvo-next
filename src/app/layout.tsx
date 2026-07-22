@@ -8,7 +8,10 @@ const SITE_URL = "https://rabbit-farming-from-a-to-z-react.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Кролівництво від А до Я — облік, догляд та лікування кролів",
+  title: {
+    default: "Кролівництво від А до Я",
+    template: "%s | Кролівництво від А до Я",
+  },
   description:
     "Кролівництво від А до Я — сучасна платформа для обліку кролів, годівлі, вакцинації, лікування та ведення господарства.",
   keywords: [
