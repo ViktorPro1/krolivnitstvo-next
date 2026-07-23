@@ -4,7 +4,7 @@ import "./globals.css";
 import "./print.css";
 import AppShell from "./components/AppShell/AppShell";
 
-const SITE_URL = "https://rabbit-farming-from-a-to-z-react.vercel.app";
+const SITE_URL = "https://krolivnitstvo-ua.vercel.app/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -125,6 +125,21 @@ export default function RootLayout({
         </div>
 
         <AppShell>{children}</AppShell>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-G8QL1CQQPQ"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+
+           gtag('config', 'G-G8QL1CQQPQ');
+          `}
+        </Script>
       </body>
     </html>
   );
