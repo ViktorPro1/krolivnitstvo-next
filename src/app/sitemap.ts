@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 // ЗМІНИ на реальний production-домен перед деплоєм, якщо він відрізняється.
-const BASE_URL = "https://rabbit-farming-from-a-to-z-react.vercel.app";
+const BASE_URL = "https://krolivnitstvo-ua.vercel.app/";
 
 // Публічні сторінки-статті (без гейту на сесію, без службових/особистих сторінок).
 // Список збережено з попереднього sitemap.xml Vite-проєкту.
