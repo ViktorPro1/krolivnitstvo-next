@@ -18,10 +18,12 @@ const supabaseUrl = isValidHttpUrl(rawSupabaseUrl)
   ? rawSupabaseUrl!
   : "http://localhost";
 
+const supabaseAnonKey = supabaseKey || "build-time-placeholder-anon-key";
+
 if (!isValidHttpUrl(rawSupabaseUrl) || !supabaseKey) {
   console.warn(
     "Supabase environment variables are not configured correctly. Falling back to local defaults for build-time compatibility.",
   );
 }
 
-export const supabase = createClient(supabaseUrl, supabaseKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);

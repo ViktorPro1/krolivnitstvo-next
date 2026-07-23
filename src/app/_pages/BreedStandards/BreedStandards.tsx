@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import "./BreedStandards.css";
 import ShareButton from "../../components/ShareButton/ShareButton";

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import "./RabbitVsHare.css";
 import ShareButton from "../../components/ShareButton/ShareButton";

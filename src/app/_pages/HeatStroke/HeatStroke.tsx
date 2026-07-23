@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import "./HeatStroke.css";
 import ShareButton from "../../components/ShareButton/ShareButton";

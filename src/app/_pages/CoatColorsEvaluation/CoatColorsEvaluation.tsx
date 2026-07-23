@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import "./CoatColorsEvaluation.css";
 import ShareButton from "../../components/ShareButton/ShareButton";

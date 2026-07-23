@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import "./FalsePregnancy.css";
 import ShareButton from "../../components/ShareButton/ShareButton";

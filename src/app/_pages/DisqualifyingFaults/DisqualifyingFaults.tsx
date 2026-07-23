@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import "./DisqualifyingFaults.css";
 import ShareButton from "../../components/ShareButton/ShareButton";
